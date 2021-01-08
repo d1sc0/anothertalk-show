@@ -1,0 +1,113 @@
+.post {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto 20px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--light-border-color);
+
+    :global .dark-theme :local & {
+      border-color: var(--dark-border-color);
+    }
+  }
+
+  @media (--tablet) {
+    max-width: 660px;
+  }
+
+  h1 {
+    margin: 0 0 10px;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+.title {
+  a {
+    text-decoration: none;
+  }
+}
+
+.coverImage {
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.meta {
+  font-size: 0.95rem;
+  opacity: 0.6;
+}
+
+.tags {
+  font-size: 0.95rem;
+  opacity: 0.6;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.readMore {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.postContent {
+  position: relative;
+}
+
+.introText {
+  font-size: 2rem;
+  font-weight: bold;
+  a {
+    color: #e60000;
+  }
+}
+
+.postExcerpt {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.social {
+  margin-right: 15px;
+}
+
+.imageLeft {
+  width: 45%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  @media (--phone) {
+    float: none;
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+.imageRight {
+  width: 45%;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  @media (--phone) {
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.imageFull {
+  width: 100%;
+}
