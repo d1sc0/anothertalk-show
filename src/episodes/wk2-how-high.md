@@ -1,8 +1,8 @@
 ---
-title: "Week2 - How High?"
-date: "2019-03-29"
-path: "/blog/wk2-how-high"
-tags: ["Weeknotes"]
+title: 'Week2 - How High?'
+date: '2019-03-29'
+path: '/episodes/wk2-how-high'
+tags: ['Weeknotes']
 ---
 
 _I'm back for a second week. Yay! but [no longer on Medium](http://words.lostinthe.uk/tinkering-monday/). It potentially limits my audience but I'm not writing for fame and fortune so that's ok._

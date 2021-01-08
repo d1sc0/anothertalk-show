@@ -1,7 +1,7 @@
 ---
 title: 'Week1 - Be more like Robbie'
 date: '2019-03-15'
-path: '/blog/wk1-be-more-like-robbie'
+path: '/episodes/wk1-be-more-like-robbie'
 tags: ['Weeknotes']
 ---
 

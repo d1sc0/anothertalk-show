@@ -9,7 +9,7 @@ const Footer = () => {
         {' // '}
         <Link to="/about">About</Link>
         {' // '}
-        <Link to="/blog">Blog</Link>
+        <Link to="/episodes">Episodes</Link>
         {' // '}
         <Link to="/contact">Contact</Link>
         {' // '}

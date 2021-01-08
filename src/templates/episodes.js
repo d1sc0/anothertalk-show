@@ -3,22 +3,22 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
-import Post from '../components/post'
+import Episode from '../components/episode'
 import Navigation from '../components/navigation'
 
-const Blog = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
+const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   const {
-    allMarkdownRemark: { edges: posts },
+    allMarkdownRemark: { edges: episodes },
   } = data
 
   return (
     <>
       <SEO
-        title="Blog"
-        description="Thoughts and reflections of Stuart Mackenzie"
+        title="Episodes"
+        description="Episodes of Be Human"
       />
       <Layout>
-        {posts.map(({ node }) => {
+        {episodes.map(({ node }) => {
           const {
             id,
             excerpt: autoExcerpt,
@@ -35,7 +35,7 @@ const Blog = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           } = node
 
           return (
-            <Post
+            <Episode
               key={id}
               title={title}
               date={date}
@@ -51,16 +51,16 @@ const Blog = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
 
         <Navigation
           previousPath={previousPagePath}
-          previousLabel="Newer posts"
+          previousLabel="Newer Episodes"
           nextPath={nextPagePath}
-          nextLabel="Older posts"
+          nextLabel="Older Episodes"
         />
       </Layout>
     </>
   )
 }
 
-Blog.propTypes = {
+Episodes.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.shape({
     nextPagePath: PropTypes.string,
@@ -68,10 +68,10 @@ Blog.propTypes = {
   }),
 }
 
-export const postsQuery = graphql`
+export const episodesQuery = graphql`
   query($limit: Int!, $skip: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//posts//" } }
+      filter: { fileAbsolutePath: { regex: "//episodes//" } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
@@ -106,4 +106,4 @@ export const postsQuery = graphql`
   }
 `
 
-export default Blog
+export default Episodes

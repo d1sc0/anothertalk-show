@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import style from '../styles/post.module.css'
+import style from '../styles/content.module.css'
 
 const IndexPage = () => (
   <Layout>

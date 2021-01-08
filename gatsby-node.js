@@ -7,7 +7,7 @@ const pageTypeRegex = /src\/(.*?)\//
 const getType = node => node.fileAbsolutePath.match(pageTypeRegex)[1]
 
 const pageTemplate = path.resolve(`./src/templates/page.js`)
-const indexTemplate = path.resolve(`./src/templates/blog.js`)
+const indexTemplate = path.resolve(`./src/templates/episodes.js`)
 const tagsTemplate = path.resolve(`./src/templates/tags.js`)
 
 exports.createPages = ({ actions, graphql, getNodes }) => {
@@ -57,7 +57,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     const posts = allNodes.filter(
       ({ internal, fileAbsolutePath }) =>
         internal.type === "MarkdownRemark" &&
-        fileAbsolutePath.indexOf("/posts/") !== -1
+        fileAbsolutePath.indexOf("/episodes/") !== -1
     )
 
     // Create posts index with pagination

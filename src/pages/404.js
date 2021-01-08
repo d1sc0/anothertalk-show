@@ -2,7 +2,7 @@ import React from 'react'
 import catGIF from '../images/sadcat.gif'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import style from '../styles/post.module.css'
+import style from '../styles/content.module.css'
 
 const NotFoundPage = () => {
   return (

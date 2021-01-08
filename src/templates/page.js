@@ -4,9 +4,9 @@ import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import Post from "../components/post"
+import Episode from "../components/episode"
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const EpisodePostTemplate = ({ data, pageContext }) => {
   const {
     frontmatter: { title, date, path, author, coverImage, excerpt, tags },
     excerpt: autoExcerpt,
@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={title} description={excerpt || autoExcerpt} />
-      <Post
+      <Episode
         key={id}
         title={title}
         date={date}
@@ -36,9 +36,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   )
 }
 
-export default BlogPostTemplate
+export default EpisodePostTemplate
 
-BlogPostTemplate.propTypes = {
+EpisodePostTemplate.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.shape({
     next: PropTypes.object,

@@ -1,8 +1,8 @@
 ---
-title: "Week3 - Dear Diary"
-date: "2019-04-06"
-path: "/blog/wk2-dear-diary"
-tags: ["Weeknotes"]
+title: 'Week3 - Dear Diary'
+date: '2019-04-06'
+path: '/episodes/wk2-dear-diary'
+tags: ['Weeknotes']
 ---
 
 _3 weeks of #weeknotes and 3 weeks without smoking! 🎉_

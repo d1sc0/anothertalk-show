@@ -1,7 +1,7 @@
 ---
 title: 'Week6 - Range'
 date: '2020-02-21'
-path: '/blog/wk6-range'
+path: '/episodes/wk6-range'
 tags: ['Weeknotes', 'Rarenotes']
 ---
 

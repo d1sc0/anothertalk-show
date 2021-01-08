@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Form from '../components/form'
-import style from '../styles/post.module.css'
+import style from '../styles/content.module.css'
 import { Link } from 'gatsby'
 
 const ContactPage = () => (

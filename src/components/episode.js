@@ -4,9 +4,9 @@ import { Link } from 'gatsby'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
 
-import style from '../styles/post.module.css'
+import style from '../styles/content.module.css'
 
-const Post = ({
+const Episode = ({
   title,
   date,
   path,
@@ -15,12 +15,12 @@ const Post = ({
   excerpt,
   tags,
   html,
-  previousPost,
+  previousEpisode,
   readingTime,
   nextPost,
 }) => {
-  const previousPath = previousPost && previousPost.frontmatter.path
-  const previousLabel = previousPost && previousPost.frontmatter.title
+  const previousPath = previousEpisode && previousEpisode.frontmatter.path
+  const previousLabel = previousEpisode && previousEpisode.frontmatter.title
   const nextPath = nextPost && nextPost.frontmatter.path
   const nextLabel = nextPost && nextPost.frontmatter.title
 
@@ -84,7 +84,7 @@ const Post = ({
   )
 }
 
-Post.propTypes = {
+Episode.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   path: PropTypes.string,
@@ -98,4 +98,4 @@ Post.propTypes = {
   nextPost: PropTypes.object,
 }
 
-export default Post
+export default Episode

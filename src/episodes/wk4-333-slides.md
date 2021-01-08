@@ -1,8 +1,8 @@
 ---
-title: "Week4 - 333 Slides"
-date: "2019-04-12"
-path: "/blog/wk4-333-slides"
-tags: ["Weeknotes"]
+title: 'Week4 - 333 Slides'
+date: '2019-04-12'
+path: '/episodes/wk4-333-slides'
+tags: ['Weeknotes']
 ---
 
 This is going to have to be brief. I'm on a train, batteries dying (mostly mine) and dodgy wifi. I will try harder in future.
