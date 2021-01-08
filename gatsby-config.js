@@ -26,8 +26,8 @@ module.exports = {
         path: '/about',
       },
       {
-        title: 'Blog',
-        path: '/blog',
+        title: 'Episodes',
+        path: '/episodes',
       },
       {
         title: 'Contact',

@@ -66,7 +66,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
       items: posts,
       component: indexTemplate,
       itemsPerPage: siteMetadata.postsPerPage,
-      pathPrefix: "/blog",
+      pathPrefix: "/episodes",
     })
 
     // Create each markdown page and post
