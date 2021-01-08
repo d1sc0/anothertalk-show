@@ -108,6 +108,16 @@ module.exports = {
             },
           },
           {
+            resolve: 'gatsby-remark-audio',
+            options: {
+            preload: 'auto',
+            loop: false,
+            controls: true,
+            muted: false,
+            autoplay: false
+            },
+          },
+          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,

@@ -54,7 +54,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
       return (typeA > typeB) - (typeA < typeB)
     })
 
-    const posts = allNodes.filter(
+    const episodes = allNodes.filter(
       ({ internal, fileAbsolutePath }) =>
         internal.type === "MarkdownRemark" &&
         fileAbsolutePath.indexOf("/episodes/") !== -1
@@ -63,7 +63,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     // Create posts index with pagination
     paginate({
       createPage,
-      items: posts,
+      items: episodes,
       component: indexTemplate,
       itemsPerPage: siteMetadata.postsPerPage,
       pathPrefix: "/episodes",
@@ -92,18 +92,18 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     // Create tag pages
     const tags = filter(
       tag => not(isNil(tag)),
-      uniq(flatMap(post => post.frontmatter.tags, posts))
+      uniq(flatMap(episode => episode.frontmatter.tags, episodes))
     )
 
     forEach(tag => {
-      const postsWithTag = posts.filter(
-        post =>
-          post.frontmatter.tags && post.frontmatter.tags.indexOf(tag) !== -1
+      const episodesWithTag = episodes.filter(
+        episode =>
+          episode.frontmatter.tags && episode.frontmatter.tags.indexOf(tag) !== -1
       )
 
       paginate({
         createPage,
-        items: postsWithTag,
+        items: episodesWithTag,
         component: tagsTemplate,
         itemsPerPage: siteMetadata.postsPerPage,
         pathPrefix: `/tag/${toKebabCase(tag)}`,
