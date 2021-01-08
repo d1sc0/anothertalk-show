@@ -7,15 +7,15 @@ const postCSSMixins = require('postcss-mixins')
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Stu`,
-    description: `A simple starter for Gatsby. That's it.`,
+    title: `Be Human`,
+    description: `A podcast about being human.`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
       alt: '',
     },
-    siteUrl: `https://hellostu.xyz/`,
-    logoText: 'hello stu',
+    siteUrl: `https://behuman.xyz/`,
+    logoText: 'be human',
     defaultTheme: 'light',
     postsPerPage: 5,
     showMenuItems: 3,
@@ -113,8 +113,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Hello Stu`,
-        short_name: `hello-stu`,
+        name: `Be Human`,
+        short_name: `be-human`,
         start_url: `/`,
         background_color: `#292a2d`,
         theme_color: `#292a2d`,

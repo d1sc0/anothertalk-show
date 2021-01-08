@@ -1,6 +1,6 @@
 {
-  "name": "hello-stu",
-  "description": "Personal Website of Stuart Mackenzie",
+  "name": "behuman-xyz",
+  "description": "a podcast exploring the lives of humans",
   "version": "0.1.0",
   "author": "Stuart Mackenzie",
   "keywords": [
@@ -67,9 +67,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/d1sc0/hello-stu"
+    "url": "https://github.com/d1sc0/behuman-xyz"
   },
   "bugs": {
-    "url": "https://github.com/d1sc0/hello-stu/issues"
+    "url": "https://github.com/d1sc0/behuman-xyz/issues"
   }
 }
