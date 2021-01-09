@@ -1,34 +1,60 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql} from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import style from '../styles/content.module.css'
 
-const IndexPage = () => (
+
+const IndexPage = ({ data }) => {
+  const latestEpisode = data.allMdx.edges[0].node
+  return (
   <Layout>
     <SEO
       title="Home"
-      description="Home of Stuart Mackenzie - Director of Product & Tech at FutureGov. Also known as a father, husband, occassional runner, podcaster, photographer, blogger and nice human."
+      description="Be Human - A podcast exploring human centered design in a digital world"
     />
     <div className={style.post}>
       <div className={style.postContent}>
         <p className={style.introText}>
-          Hello, I'm <Link to="/about">Stuart Mackenzie</Link>.
+          Be Human: A podcast exploring <Link to="/about">human centered design</Link> in a digitial world.
         </p>
         <p className={style.introText}>
-          I'm the Product & Technology Director at{' '}
-          <a href="https://www.wearefuturegov.com/">FutureGov</a>. I'm also
-          known for being a father, husband, runner, photography nerd, dog owner
-          and exotic disco dancer.
-        </p>
-        <p className={style.introText}>
-          I use this site to share personal{' '}
-          <Link to="/blog">thoughts and reflections</Link> but also
-          occassionally as a sandpit to prototype and test ideas in code.
+          <p>Latest Episode: {latestEpisode.frontmatter.title}</p>
+          {latestEpisode.frontmatter.url ? ( <audio src={latestEpisode.frontmatter.url} controls>Your browser does not support the audio player! <a href={latestEpisode.frontmatter.url}>You can download here instead</a></audio> ) : null}
+             
         </p>
       </div>
     </div>
   </Layout>
-)
+)}
+
+export const data = graphql`
+  query{
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "//episodes//" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            date(formatString: "DD MMMM YYYY")
+            path
+            tags
+            url
+          }
+          fields {
+            readingTime {
+              text
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

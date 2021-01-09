@@ -1,17 +1,18 @@
 ---
-title: Be more like Robbie
-subtitle: The first ever episode.
-date: 2021-01-08
-publicationDate: 2021-01-08
-path: /episodes/be-more-like-robbie
-slug: /episodes/be-more-like-robbie
-tags: ['Weeknotes']
-type: podcast-episode
+title: Pudding Police
+subtitle: Beware the pudding police are on the prowl.
 status: published
-guid: 69591149df_1_001
-author: Stuart Mackenzie
+date: 2021-01-04
+publicationDate: 2021-01-04
+path: /episodes/s1e3-pudding-police
+slug: /episodes/s1e3-pudding-police
+tags: ['Design', 'Technology', 'Change', 'Interview']
+categories: ['Design', 'Technology', 'Change', 'Interview']
+type: podcast-episode
+guid: behuman_1_003
+author: Be Human
 season: 1
-episodeNumber: 1
+episodeNumber: 3
 episodeType: full
 url: http://www.hochmuth.com/mp3/Tchaikovsky_Rococo_Var_orch.mp3
 size: 206820339

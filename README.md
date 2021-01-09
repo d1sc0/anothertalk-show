@@ -8,6 +8,7 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 - convert/update to support mdx plugin - done
 - add and test gatsby-remark-audio - done
 - add/configure gatsby-plugin-podcast-feed-mdx - added
+- add subtitles in
 - put it on firebase
 - test podcast feed - https://castfeedvalidator.com/
 - theme it up a little
