@@ -158,6 +158,8 @@ module.exports = {
         subCategory1: `Design`,
         category2: `Society & Culture`,
         subCategory2: `Documentary`,
+        category3: `Science`,
+        subCategory3: `Social Sciences`,
         timeToLive: `60`,
         outputPath: `/podcast-rss-feed.xml`
       },
