@@ -14,7 +14,7 @@ author: Be Human
 season: 1
 episodeNumber: 1
 episodeType: full
-url: http://www.hochmuth.com/mp3/Tchaikovsky_Rococo_Var_orch.mp3
+url: https://storage.googleapis.com/behuman-podcast/test_file.mp3
 size: 206820339
 duration: 3414
 explicit: false
