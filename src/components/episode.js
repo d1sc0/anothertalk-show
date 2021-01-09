@@ -15,12 +15,12 @@ const Episode = ({
   tags,
   url,
   body,
-  previousEpisode,
+  previousPost,
   readingTime,
   nextPost,
 }) => {
-  const previousPath = previousEpisode && previousEpisode.frontmatter.path
-  const previousLabel = previousEpisode && previousEpisode.frontmatter.title
+  const previousPath = previousPost && previousPost.frontmatter.path
+  const previousLabel = previousPost && previousPost.frontmatter.title
   const nextPath = nextPost && nextPost.frontmatter.path
   const nextLabel = nextPost && nextPost.frontmatter.title
 
