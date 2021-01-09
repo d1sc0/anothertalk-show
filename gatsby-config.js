@@ -143,7 +143,7 @@ module.exports = {
         summary: ``,
         podcastType: `episodic`,
         siteUrl: `https://behuman.xyz`,
-        imageUrl: `https://behuman.xyz/static/behuman_cover.png`,
+        imageUrl: `https://behuman.xyz/behuman_cover.png`,
         feedUrl: `https://behuman.xyz/podcast-rss-feed.xml`,
         language: `en-gb`,
         copyright: `Copyright © 2020 Stuart Mackenzie`,
