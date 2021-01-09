@@ -42,6 +42,7 @@ const Episode = ({
             {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
 
             <p className={style.postExcerpt}>{excerpt}</p>
+            
             {tags ? (
               <div className={style.tags}>
                 {tags.map(tag => (
@@ -64,6 +65,7 @@ const Episode = ({
               {' // '}
               {readingTime.text}
             </div>
+
             {tags ? (
               <div className={style.tags}>
                 {tags.map(tag => (
@@ -73,9 +75,9 @@ const Episode = ({
                 ))}
               </div>
             ) : null}
-
+            
             {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
-
+             
             <MDXRenderer>{body}</MDXRenderer>
             <Navigation
               previousPath={previousPath}

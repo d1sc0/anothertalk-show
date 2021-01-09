@@ -8,7 +8,7 @@ import Episode from "../components/episode"
 
 const EpisodePostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, tags },
+    frontmatter: { title, date, path, tags, url },
     excerpt,
     fields: { readingTime },
     id,
@@ -27,6 +27,7 @@ const EpisodePostTemplate = ({ data, pageContext }) => {
         readingTime={readingTime}
         body={body}
         tags={tags}
+        url={url}
         previousPost={previous}
         nextPost={next}
       />
@@ -52,6 +53,7 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM YYYY")
         path
         tags
+        url
       }
       fields {
         readingTime {

@@ -1,10 +1,10 @@
 ---
-title: Week1 - Be more like Robbie
+title: Be more like Robbie
 subtitle: The first ever episode.
 date: 2021-01-08
 publicationDate: 2021-01-08
-path: /episodes/wk1-be-more-like-robbie
-slug: /episodes/wk1-be-more-like-robbie
+path: /episodes/be-more-like-robbie
+slug: /episodes/be-more-like-robbie
 tags: ['Weeknotes']
 type: podcast-episode
 status: published
@@ -17,7 +17,6 @@ url: http://www.hochmuth.com/mp3/Tchaikovsky_Rococo_Var_orch.mp3
 size: 206820339
 duration: 3414
 explicit: false
-categories: ['Weeknotes', 'Two']
 ---
 
 I’ve tried to write [weeknotes](https://weeknot.es/) on multiple occasions and failed. They always end up in the bin. I find writing hard and I find committing my own opinions and thoughts down is often followed by much self-doubt and anxiety that people will judge me as stupid, incompetent or arrogant. I always enjoy dipping into the weeknotes of others though and get lots from them (far too many people to list). I’ve always believed there is value in reflecting, sharing and being open. Reflection is **not** something I struggle with and it’s odd that in conversation I am prone to often over-sharing and extreme transparency (sorry colleagues!) but in written form I often can’t find my voice.
