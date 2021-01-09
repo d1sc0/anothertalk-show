@@ -14,7 +14,7 @@ author: Be Human
 season: 1
 episodeNumber: 3
 episodeType: full
-url: https://storage.googleapis.com/behuman-podcast/test_file.mp3
+url: https://storage.googleapis.com/behuman-podcast/test_file3.mp3
 size: 206820339
 duration: 3414
 explicit: false
