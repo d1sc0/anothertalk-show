@@ -27,6 +27,7 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               date,
               path,
               tags,
+              url,
             },
             fields: { readingTime },
           } = node
@@ -39,6 +40,7 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               path={path}
               readingTime={readingTime}
               tags={tags}
+              url={url}
               excerpt={excerpt}
             />
           )
@@ -80,6 +82,7 @@ export const episodesQuery = graphql`
             date(formatString: "DD MMMM YYYY")
             path
             tags
+            url
           }
           fields {
             readingTime {

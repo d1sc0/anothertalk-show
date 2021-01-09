@@ -13,6 +13,7 @@ const Episode = ({
   path,
   excerpt,
   tags,
+  url,
   body,
   previousEpisode,
   readingTime,
@@ -38,6 +39,7 @@ const Episode = ({
               {readingTime.text}
             </div>
             <p className={style.postExcerpt}>{excerpt}</p>
+            {url ? (<p><audio src={url} preload='auto' controls></audio></p>) : null}
             {tags ? (
               <div className={style.tags}>
                 {tags.map(tag => (

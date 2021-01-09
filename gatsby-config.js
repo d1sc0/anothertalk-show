@@ -134,6 +134,38 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-plugin-podcast-feed-mdx`,
+      options: {
+        title: `Be Human`,
+        subtitle: `A podcast about things`,
+        description: `Podcast description`,
+        summary: `Podcast summary`,
+        podcastType: `episodic`,
+        siteUrl: `https://behuman.xyz`,
+        imageUrl: `https://behuman.xyz/static/behuman-cover.png`,
+        feedUrl: `https://behuman.xyz/podcast-rss-feed.xml`,
+        language: `en-gb`,
+        copyright: `Copyright © 2020 Stuart Mackenzie`,
+        authorName: `Stuart Macknenzie`,
+        ownerName: `Stuart Macknenzie`,
+        ownerEmail: `mail@behuman.xyz`,
+        managingEditor: `mail@behuman.xyz`,
+        webMaster: `mail@behuman.xyz`,
+        explicit: `no`,
+        publicationDate: `Jan 01, 2021 10:00:00 GMT`,
+        category1: `Arts`,
+        subCategory1: `Books`,
+        category2: `Education`,
+        subCategory2: `Courses`,
+        category3: `Business`,
+        subCategory3: `Marketing`,
+        timeToLive: `60`,
+        outputPath: `/podcast-rss-feed.xml`
+      },
+    },
+
+
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

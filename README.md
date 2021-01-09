@@ -4,7 +4,11 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 
 ## Things to do
 
-- tidy up from cloning blog
-- add configure plugins - gatsby-remark-audio & gatsby-plugin-podcast-feed-mdx
-- test with some audio
+- tidy up from cloning blog - done
+- convert/update to support mdx plugin - done
+- add and test gatsby-remark-audio - done
+- add/configure gatsby-plugin-podcast-feed-mdx - added
+- put it on firebase
+- test podcast feed
 - theme it up a little
+- test with some audio (host in GCP bucket?)

@@ -30,6 +30,7 @@
     "gatsby-plugin-manifest": "^2.4.33",
     "gatsby-plugin-mdx": "^1.8.0",
     "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-podcast-feed-mdx": "^0.1.0-beta.0",
     "gatsby-plugin-postcss": "^2.3.13",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-sharp": "^2.6.38",
