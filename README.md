@@ -9,6 +9,6 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 - add and test gatsby-remark-audio - done
 - add/configure gatsby-plugin-podcast-feed-mdx - added
 - put it on firebase
-- test podcast feed
+- test podcast feed - https://castfeedvalidator.com/
 - theme it up a little
-- test with some audio (host in GCP bucket?)
+- test with some real audio (host in GCP bucket?)
