@@ -62,13 +62,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `audio`,
-        path: `${__dirname}/src/audio`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
@@ -87,11 +80,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
+    { resolve: `gatsby-plugin-mdx`,
+    options: {
         plugins: [
           {
             resolve: 'gatsby-remark-embed-video',
@@ -125,8 +115,11 @@ module.exports = {
           },
           `gatsby-remark-reading-time`,
         ],
-      },
     },
+  },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

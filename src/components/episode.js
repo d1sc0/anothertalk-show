@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import style from '../styles/content.module.css'
 
@@ -10,11 +11,9 @@ const Episode = ({
   title,
   date,
   path,
-  coverImage,
-  author,
   excerpt,
   tags,
-  html,
+  body,
   previousEpisode,
   readingTime,
   nextPost,
@@ -70,7 +69,7 @@ const Episode = ({
                 ))}
               </div>
             ) : null}
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <MDXRenderer>{body}</MDXRenderer>
             <Navigation
               previousPath={previousPath}
               previousLabel={previousLabel}
@@ -88,8 +87,6 @@ Episode.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   path: PropTypes.string,
-  coverImage: PropTypes.object,
-  author: PropTypes.string,
   excerpt: PropTypes.string,
   html: PropTypes.string,
   readingTime: PropTypes.string,

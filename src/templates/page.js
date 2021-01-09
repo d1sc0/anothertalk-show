@@ -8,26 +8,24 @@ import Episode from "../components/episode"
 
 const EpisodePostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, author, coverImage, excerpt, tags },
-    excerpt: autoExcerpt,
+    frontmatter: { title, date, path, tags },
+    excerpt,
     fields: { readingTime },
     id,
-    html,
-  } = data.markdownRemark
+    body,
+  } = data.mdx
   const { next, previous } = pageContext
 
   return (
     <Layout>
-      <SEO title={title} description={excerpt || autoExcerpt} />
+      <SEO title={title} description={excerpt} />
       <Episode
         key={id}
         title={title}
         date={date}
         path={path}
-        author={author}
         readingTime={readingTime}
-        coverImage={coverImage}
-        html={html}
+        body={body}
         tags={tags}
         previousPost={previous}
         nextPost={next}
@@ -48,21 +46,12 @@ EpisodePostTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query($path: String) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    mdx(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY")
         path
-        author
-        excerpt
         tags
-        coverImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
       fields {
         readingTime {
@@ -70,7 +59,7 @@ export const pageQuery = graphql`
         }
       }
       id
-      html
+      body
       excerpt
     }
   }

@@ -8,7 +8,7 @@ import Navigation from '../components/navigation'
 
 const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   const {
-    allMarkdownRemark: { edges: episodes },
+    allMdx: { edges: episodes },
   } = data
 
   return (
@@ -21,14 +21,11 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
         {episodes.map(({ node }) => {
           const {
             id,
-            excerpt: autoExcerpt,
+            excerpt,
             frontmatter: {
               title,
               date,
               path,
-              author,
-              coverImage,
-              excerpt,
               tags,
             },
             fields: { readingTime },
@@ -40,11 +37,9 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               title={title}
               date={date}
               path={path}
-              author={author}
               readingTime={readingTime}
-              coverImage={coverImage}
               tags={tags}
-              excerpt={excerpt || autoExcerpt}
+              excerpt={excerpt}
             />
           )
         })}
@@ -70,7 +65,7 @@ Episodes.propTypes = {
 
 export const episodesQuery = graphql`
   query($limit: Int!, $skip: Int!) {
-    allMarkdownRemark(
+    allMdx(
       filter: { fileAbsolutePath: { regex: "//episodes//" } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
@@ -84,16 +79,7 @@ export const episodesQuery = graphql`
             title
             date(formatString: "DD MMMM YYYY")
             path
-            author
-            excerpt
             tags
-            coverImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           fields {
             readingTime {

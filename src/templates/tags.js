@@ -13,7 +13,7 @@ const Tags = ({
   pageContext: { nextPagePath, previousPagePath, tag },
 }) => {
   const {
-    allMarkdownRemark: { edges: episodes },
+    allMdx: { edges: episodes },
   } = data
 
   return (
@@ -27,14 +27,11 @@ const Tags = ({
         {episodes.map(({ node }) => {
           const {
             id,
-            excerpt: autoExcerpt,
+            excerpt,
             frontmatter: {
               title,
               date,
               path,
-              author,
-              coverImage,
-              excerpt,
               tags,
             },
             fields: { readingTime },
@@ -46,11 +43,9 @@ const Tags = ({
               title={title}
               date={date}
               path={path}
-              author={author}
               tags={tags}
               readingTime={readingTime}
-              coverImage={coverImage}
-              excerpt={excerpt || autoExcerpt}
+              excerpt={excerpt}
             />
           )
         })}
@@ -76,7 +71,7 @@ Tags.propTypes = {
 
 export const episodesQuery = graphql`
   query($limit: Int!, $skip: Int!, $tag: String!) {
-    allMarkdownRemark(
+    allMdx(
       filter: { frontmatter: { tags: { in: [$tag] } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
@@ -90,16 +85,7 @@ export const episodesQuery = graphql`
             title
             date(formatString: "DD MMMM YYYY")
             path
-            author
-            excerpt
             tags
-            coverImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           fields {
             readingTime {

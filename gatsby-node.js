@@ -16,7 +16,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -43,7 +43,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     }
 
     const {
-      allMarkdownRemark: { edges: markdownPages },
+      allMdx: { edges: markdownPages },
       site: { siteMetadata },
     } = result.data
 
@@ -56,7 +56,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
 
     const episodes = allNodes.filter(
       ({ internal, fileAbsolutePath }) =>
-        internal.type === "MarkdownRemark" &&
+        internal.type === "Mdx" &&
         fileAbsolutePath.indexOf("/episodes/") !== -1
     )
 
@@ -120,22 +120,4 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
   })
 }
 
-exports.sourceNodes = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter!
-    }
 
-    type Frontmatter {
-      title: String!
-      author: String
-      date: Date! @dateformat
-      path: String!
-      tags: [String!]
-      excerpt: String
-      coverImage: File @fileByRelativePath
-    }
-  `
-  createTypes(typeDefs)
-}
