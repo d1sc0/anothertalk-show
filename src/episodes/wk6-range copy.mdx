@@ -19,7 +19,7 @@ In addition to doing a great job of re-stocking my sticker collection this week 
 
 ### Photo of the week...
 
-![Strange animal spotted in Hackney](../images/hackney_animal.jpg)
+![Strange animal spotted in Hackney](../images/hackneyanimal.jpg)
 _Strange animal spotted in Hackney_
 
 ### Top tunes...

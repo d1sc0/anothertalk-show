@@ -36,10 +36,6 @@ module.exports = {
     ],
   },
   plugins: [
-    `babel-preset-gatsby`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-advanced-sitemap`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,6 +57,8 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+
+
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -80,9 +78,13 @@ module.exports = {
         ],
       },
     },
-    { resolve: `gatsby-plugin-mdx`,
-    options: {
-        plugins: [
+
+
+    { 
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-embed-video',
             options: {
@@ -117,10 +119,9 @@ module.exports = {
         ],
     },
   },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
-    {
+    
+
+  {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Be Human`,
@@ -132,5 +133,16 @@ module.exports = {
         icon: `src/images/hello-icon.png`,
       },
     },
+
+
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-remark-reading-time`,
+    `gatsby-remark-images`,
+    `babel-preset-gatsby`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
