@@ -16,7 +16,7 @@ module.exports = {
     },
     siteUrl: `https://behuman.xyz/`,
     logoText: 'be human',
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     postsPerPage: 5,
     showMenuItems: 3,
     menuMoreText: 'Show more',
