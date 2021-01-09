@@ -8,7 +8,7 @@ slug: /episodes/wk1-be-more-like-robbie
 tags: ['Weeknotes']
 type: podcast-episode
 status: published
-guid: c30fddca-79fb-48b1-8ad5-69591149df8c
+guid: 69591149df_1_001
 author: Stuart Mackenzie
 season: 1
 episodeNumber: 1
@@ -19,16 +19,6 @@ duration: 3414
 explicit: false
 categories: ['Weeknotes', 'Two']
 ---
-
-<iframe
-  width="480"
-  height="269"
-  frameborder="0"
-  allowfullscreen
-  scrolling="no"
-  allowtransparency
-  src="https://giphy.com/embed/XIqCQx02E1U9W"
-></iframe>
 
 I’ve tried to write [weeknotes](https://weeknot.es/) on multiple occasions and failed. They always end up in the bin. I find writing hard and I find committing my own opinions and thoughts down is often followed by much self-doubt and anxiety that people will judge me as stupid, incompetent or arrogant. I always enjoy dipping into the weeknotes of others though and get lots from them (far too many people to list). I’ve always believed there is value in reflecting, sharing and being open. Reflection is **not** something I struggle with and it’s odd that in conversation I am prone to often over-sharing and extreme transparency (sorry colleagues!) but in written form I often can’t find my voice.
 
