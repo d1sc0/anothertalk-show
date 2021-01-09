@@ -138,7 +138,7 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: {
         title: `Be Human`,
-        subtitle: ``,
+        subtitle: `A podcast exploring human centered design, technology and change in a world of increasing complexity`,
         description: `A podcast exploring human centered design, technology and change in a world of increasing complexity`,
         summary: `Discussions and interviews with interesting people about design, technology and change`,
         podcastType: `episodic`,
@@ -158,7 +158,6 @@ module.exports = {
         subCategory1: `Design`,
         category2: `Society & Culture`,
         subCategory2: `Documentary`,
-        category3: `Technology`,
         timeToLive: `60`,
         outputPath: `/podcast-rss-feed.xml`
       },
