@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
   <Layout>
     <SEO
       title="Home"
-      description="Be Human - A podcast exploring human centered design in a digital world"
+      description="Be Human - A podcast exploring human centered design in a digital world."
     />
     <div className={style.post}>
       <div className={style.postContent}>

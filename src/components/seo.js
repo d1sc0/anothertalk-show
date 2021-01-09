@@ -24,7 +24,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
   } = data.site.siteMetadata
   const metaTitle = title || siteTitle
   const metaDescription = description || siteDescription
-  const cardURL = siteUrl + '/summary_sq.png'
+  const cardURL = siteUrl + '/behuman_small.png'
   return (
     <>
     <Helmet
@@ -81,7 +81,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         )
         .concat(meta)}
     />
-    <Helmet><link rel='alternate' type='application/rss+xml' title='Behuman Podcast Feed' href='/podcast-rss-feed.xml' />
+    <Helmet><link rel='alternate' type='application/rss+xml' title='Be Human Podcast Feed' href='/podcast-rss-feed.xml' />
     </Helmet>
     </>
   )
@@ -91,13 +91,14 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [
-    'stuart mackenzie',
-    'stuart',
-    'mackenzie',
-    'blog',
-    'home',
-    'uk',
-    'personal site',
+    'podcast',
+    'design',
+    'human',
+    'documentary',
+    'discussion',
+    'change',
+    'technology',
+    'human centered design',
   ],
 }
 

@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Be Human`,
-    description: `A podcast about being human.`,
+    description: `A podcast exploring human centered design in a digital world.`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -125,12 +125,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Be Human`,
-        short_name: `be-human`,
+        short_name: `be human`,
         start_url: `/`,
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
         display: `minimal-ui`,
-        icon: `src/images/hello-icon.png`,
+        icon: `static/behuman-logo.png`,
       },
     },
 
@@ -138,12 +138,12 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: {
         title: `Be Human`,
-        subtitle: `A podcast about things`,
-        description: `Podcast description`,
-        summary: `Podcast summary`,
+        subtitle: ``,
+        description: `A podcast exploring human centered design in a digital world.`,
+        summary: ``,
         podcastType: `episodic`,
         siteUrl: `https://behuman.xyz`,
-        imageUrl: `https://behuman.xyz/static/behuman-cover.png`,
+        imageUrl: `https://behuman.xyz/static/behuman_cover.png`,
         feedUrl: `https://behuman.xyz/podcast-rss-feed.xml`,
         language: `en-gb`,
         copyright: `Copyright © 2020 Stuart Mackenzie`,
@@ -155,11 +155,11 @@ module.exports = {
         explicit: `no`,
         publicationDate: `Jan 01, 2021 10:00:00 GMT`,
         category1: `Arts`,
-        subCategory1: `Books`,
-        category2: `Education`,
-        subCategory2: `Courses`,
-        category3: `Business`,
-        subCategory3: `Marketing`,
+        subCategory1: `Design`,
+        category2: `Society & Culture`,
+        subCategory2: `Documentary`,
+        category3: `Technology`,
+        subCategory3: ``,
         timeToLive: `60`,
         outputPath: `/podcast-rss-feed.xml`
       },

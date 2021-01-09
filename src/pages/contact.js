@@ -15,10 +15,9 @@ const ContactPage = () => (
       <div className={style.postContent}>
         <h1 className={style.title}>Contact Stu</h1>
         <p>
-          If you want to get in touch then you can contact me via any of the
+          If you want to get in touch then you can contact us via any of the
           social links on my <Link to="/about/">about page</Link> or if it's
-          easier just submit a message using the form below! I'll try and
-          respond as soon as I can.
+          easier just submit a message using the form below! 
         </p>
         <Form />
       </div>
