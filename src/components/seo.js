@@ -26,6 +26,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
   const metaDescription = description || siteDescription
   const cardURL = siteUrl + '/summary_sq.png'
   return (
+    <>
     <Helmet
       htmlAttributes={{
         lang,
@@ -80,6 +81,9 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         )
         .concat(meta)}
     />
+    <Helmet><link rel='alternate' type='application/rss+xml' title='Behuman Podcast Feed' href='/podcast-rss-feed.xml' />
+    </Helmet>
+    </>
   )
 }
 
