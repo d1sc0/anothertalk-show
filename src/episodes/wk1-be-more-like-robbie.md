@@ -1,12 +1,12 @@
 ---
 title: Week1 - Be more like Robbie
 subtitle: The first ever episode.
-date: 2019-03-15
-publicationDate: 2019-01-29
+date: 2021-01-08
+publicationDate: 2021-01-08
 path: /episodes/wk1-be-more-like-robbie
-slug: /your-website-path/to-this-episode
+slug: /episodes/wk1-be-more-like-robbie
 tags: ['Weeknotes']
-type: episodic
+type: podcast-episode
 status: published
 guid: c30fddca-79fb-48b1-8ad5-69591149df8c
 author: Stuart Mackenzie
@@ -17,6 +17,7 @@ url: http://www.hochmuth.com/mp3/Tchaikovsky_Rococo_Var_orch.mp3
 size: 206820339
 duration: 3414
 explicit: false
+categories: ['Weeknotes', 'Two']
 ---
 
 <iframe

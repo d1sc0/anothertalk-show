@@ -39,7 +39,8 @@ const Episode = ({
               {readingTime.text}
             </div>
             <p className={style.postExcerpt}>{excerpt}</p>
-            {url ? (<p><audio src={url} preload='auto' controls></audio></p>) : null}
+            {url ? (<p><audio src={url} preload='auto' controls>Your browser does not support the
+            <code>audio</code> element.</audio></p>) : null}
             {tags ? (
               <div className={style.tags}>
                 {tags.map(tag => (
