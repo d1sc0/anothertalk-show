@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
     <div className={style.post}>
       <div className={style.postContent}>
         <p className={style.introText}>
-          Be Human: A podcast exploring <Link to="/about">human centered design</Link> in a digitial world.
+          A podcast exploring <Link to="/about">human centered design</Link> in a digital world.
         </p>
         <p className={style.introText}>
           <p>Latest Episode: {latestEpisode.frontmatter.title}</p>
