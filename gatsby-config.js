@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Be Human`,
-    description: `A podcast exploring human centered design in a digital world.`,
+    description: `A podcast exploring human centered design, technology and change in a world of increasing complexity.`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -139,8 +139,8 @@ module.exports = {
       options: {
         title: `Be Human`,
         subtitle: ``,
-        description: `A podcast exploring human centered design in a digital world.`,
-        summary: ``,
+        description: `A podcast exploring human centered design, technology and change in a world of increasing complexity`,
+        summary: `Discussions and interviews with interesting people about design, technology and change`,
         podcastType: `episodic`,
         siteUrl: `https://behuman.xyz`,
         imageUrl: `https://behuman.xyz/behuman_cover.png`,
@@ -159,7 +159,6 @@ module.exports = {
         category2: `Society & Culture`,
         subCategory2: `Documentary`,
         category3: `Technology`,
-        subCategory3: ``,
         timeToLive: `60`,
         outputPath: `/podcast-rss-feed.xml`
       },
