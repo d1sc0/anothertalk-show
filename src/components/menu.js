@@ -113,14 +113,14 @@ const Menu = ({
           ) : null}
         </ul>
       </div>
-      <button
+{/*       <button
         className={style.themeToggle}
         onClick={onChangeTheme}
         type="button"
         aria-label="Theme toggle"
       >
         <Icon style={{ cursor: 'pointer' }} size={24} d={toggleIcon} />
-      </button>
+      </button> */}
     </>
   )
 }

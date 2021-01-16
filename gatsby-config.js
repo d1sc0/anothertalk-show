@@ -130,7 +130,7 @@ module.exports = {
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
         display: `minimal-ui`,
-        icon: `static/behuman-logo.png`,
+        icon: `static/ats-logo.png`,
       },
     },
 
@@ -143,7 +143,7 @@ module.exports = {
         summary: `Discussions and interviews with interesting, talented people who aren't famous but maybe should be!`,
         podcastType: `episodic`,
         siteUrl: `https://anothertalk.show`,
-        imageUrl: `https://anothertalk.show/behuman_cover.png`,
+        imageUrl: `https://anothertalk.show/ats_cover.png`,
         feedUrl: `https://anothertalk.show/podcast-rss-feed.xml`,
         language: `en-gb`,
         copyright: `Copyright © 2020 Stuart Mackenzie`,
