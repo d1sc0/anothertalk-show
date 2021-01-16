@@ -9,8 +9,8 @@ slug: /episodes/s1e2-bang-tidy
 tags: ['Design', 'Technology', 'Change', 'Interview']
 categories: ['Design', 'Technology', 'Change', 'Interview']
 type: podcast-episode
-guid: behuman_1_002
-author: Be Human
+guid: ATS_1_002
+author: Another Talk Show
 season: 1
 episodeNumber: 2
 episodeType: full

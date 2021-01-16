@@ -9,8 +9,8 @@ slug: /episodes/s1e1-sound-check
 tags: ['Design', 'Technology', 'Change', 'Interview']
 categories: ['Design', 'Technology', 'Change', 'Interview']
 type: podcast-episode
-guid: behuman_1_001
-author: Be Human
+guid: ATS_1_001
+author: Another Talk Show
 season: 1
 episodeNumber: 1
 episodeType: full

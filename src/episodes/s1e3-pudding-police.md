@@ -9,8 +9,8 @@ slug: /episodes/s1e3-pudding-police
 tags: ['Design', 'Technology', 'Change', 'Interview']
 categories: ['Design', 'Technology', 'Change', 'Interview']
 type: podcast-episode
-guid: behuman_1_003
-author: Be Human
+guid: guid: ATS_1_003
+author: Another Talk Show
 season: 1
 episodeNumber: 3
 episodeType: full

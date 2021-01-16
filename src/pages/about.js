@@ -19,7 +19,7 @@ const AboutPage = ({ data }) => {
     <Layout>
       <SEO
         title="About"
-        description="The purpose, shape and format of the Be Human podcast explained"
+        description="The purpose, shape and format of Another Talk Show explained"
       />
       <div className={style.post}>
         <div className={style.postContent}>

@@ -9,8 +9,8 @@ slug: /episodes/s1e4-experiment-zone
 tags: ['Design', 'Technology', 'Change', 'Interview']
 categories: ['Design', 'Technology', 'Change', 'Interview']
 type: podcast-episode
-guid: behuman_1_004
-author: Be Human
+guid: ATS_1_004
+author: Another Talk Show
 season: 1
 episodeNumber: 4
 episodeType: full
