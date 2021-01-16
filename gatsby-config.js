@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Be Human`,
-    description: `A podcast exploring human centered design, technology and change in a world of increasing complexity.`,
+    description: `A podcast exploring things and stuff in a world of increasing complexity.`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -138,9 +138,9 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: {
         title: `Be Human`,
-        subtitle: `A podcast exploring human centered design, technology and change in a world of increasing complexity`,
-        description: `A podcast exploring human centered design, technology and change in a world of increasing complexity`,
-        summary: `Discussions and interviews with interesting people about design, technology and change`,
+        subtitle: `A podcast exploring things and stuff in a world of increasing complexity.`,
+        description: `A podcast exploring things and stuff in a world of increasing complexity.`,
+        summary: `Discussions and interviews with interesting people things and stuff in a world of increasing complexity.`,
         podcastType: `episodic`,
         siteUrl: `https://behuman.xyz`,
         imageUrl: `https://behuman.xyz/behuman_cover.png`,
