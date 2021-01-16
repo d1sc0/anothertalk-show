@@ -13,7 +13,7 @@ const ContactPage = () => (
     />
     <div className={style.post}>
       <div className={style.postContent}>
-        <h1 className={style.title}>Contact Stu</h1>
+        <h1 className={style.title}>Contact The Show</h1>
         <p>
           If you want to get in touch then you can contact us via any of the
           social links on my <Link to="/about/">about page</Link> or if it's

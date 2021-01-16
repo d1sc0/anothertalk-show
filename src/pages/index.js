@@ -11,12 +11,12 @@ const IndexPage = ({ data }) => {
   <Layout>
     <SEO
       title="Home"
-      description="Another Talk Show - A podcast talk show where I talk to people who aren't famous but maybe should be"
+      description="Another Talk Show - A podcast of interviews of talented people who aren't yet famous!"
     />
     <div className={style.post}>
       <div className={style.postContent}>
         <p className={style.introText}>
-          A talk show interviewing <Link to="/about">interesting people</Link> who aren't famous but maybe should be.
+          A talk show where a <Link to="/about">fairly ordinary host</Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
         </p>
         <p className={style.introText}>
           <p>Latest Episode: {latestEpisode.frontmatter.title}</p>

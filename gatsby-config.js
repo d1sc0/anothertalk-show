@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Another Talk Show`,
-    description: `A talk show where I talk to people who aren't famous...but maybe should be!`,
+    description: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -137,18 +137,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: {
-        title: `Be Human`,
-        subtitle: `A talk show where I talk to people who aren't famous...but maybe should be!`,
-        description: `A talk show where I talk to people who aren't famous...but maybe should be!`,
-        summary: `Discussions and interviews with interesting people who aren;t famous but maybe should be!`,
+        title: `Another Talk Show`,
+        subtitle: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
+        description: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
+        summary: `Discussions and interviews with interesting, talented people who aren't famous but maybe should be!`,
         podcastType: `episodic`,
         siteUrl: `https://anothertalk.show`,
         imageUrl: `https://anothertalk.show/behuman_cover.png`,
         feedUrl: `https://anothertalk.show/podcast-rss-feed.xml`,
         language: `en-gb`,
         copyright: `Copyright © 2020 Stuart Mackenzie`,
-        authorName: `Stuart Macknenzie`,
-        ownerName: `Stuart Macknenzie`,
+        authorName: `Stuart Mackenzie`,
+        ownerName: `Stuart Mackenzie`,
         ownerEmail: `mail@anothertalk.show`,
         managingEditor: `mail@anothertalk.show`,
         webMaster: `mail@anothertalk.show`,
