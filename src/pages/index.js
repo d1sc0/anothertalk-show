@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
     <div className={style.post}>
       <div className={style.postContent}>
         <p className={style.introText}>
-          A talk show where a <Link to="/about">fairly ordinary host</Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
+          A talk show where a <Link to="/about">fairly ordinary host </Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
         </p>
         <p className={style.introText}>
           <p>Latest Episode: {latestEpisode.frontmatter.title}</p>
