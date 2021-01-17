@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link, graphql} from 'gatsby'
 import Layout from '../components/layout'
+import Image from 'gatsby-image'
 import Subscribe from '../components/subscribe'
 import Player from '../components/player'
 import SEO from '../components/seo'
 import style from '../styles/content.module.css'
 
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data}) => {
+  
+  const homeImage =  data.homeImage.childImageSharp.fixed
   const {
     frontmatter: { title, date, path, url, duration, tags, season, episodeNumber, subtitle },
   } = data.allMdx.edges[0].node
@@ -24,9 +27,13 @@ const IndexPage = ({ data }) => {
       <div className={style.postContent}>
 
         <div className={style.home}>
-            <div className={style.homeImage}>
-               
-            </div>  
+            
+            <Image
+              fixed={homeImage}
+              className={style.homeImage}
+              alt="Another Talk Show Cover"
+            />
+            
 
             <div className={style.homeText}>
               A talk show where a <Link to="/about">fairly ordinary host</Link> interviews <Link to="/about">talented people</Link> who aren't yet famous!
@@ -80,6 +87,13 @@ export const data = graphql`
               text
             }
           }
+        }
+      }
+    }
+    homeImage: file(relativePath: { eq: "anothertalk-show.jpg" }) {
+      childImageSharp {
+        fixed(width: 615, quality: 100) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
