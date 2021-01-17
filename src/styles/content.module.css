@@ -1,6 +1,6 @@
 .post {
   width: 100%;
-  max-width: 800px;
+  max-width: 1100px;
   text-align: left;
   padding: 20px;
   margin: 0 auto 20px;
@@ -53,12 +53,23 @@
   margin-right: 10px;
 }
 
+.tag:hover {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--dark-color-accent);
+}
+
 .readMore {
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
   margin: 10px 0;
   font-size: 1rem;
+  color: var(--dark-color-accent);
+}
+
+.readMore:hover {
+  color: var(--dark-color);
 }
 
 .postContent {
@@ -205,8 +216,8 @@
 }
 
 .homeImage {
-  width: 45%;
-  height: 300px;
+  width: 58%;
+  height: 400px;
   background-color: #252627;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -218,7 +229,7 @@
 }
 
 .homeText {
-  width: 50%;
+  width: 38%;
   margin-bottom: 5px;
   font-size: 2.5rem;
   font-weight: bold;

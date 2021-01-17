@@ -33,7 +33,6 @@ const IndexPage = ({ data }) => {
             </div>
         </div>
 
-        
         <Player 
           title={title}
           date={date}

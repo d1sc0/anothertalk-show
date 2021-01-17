@@ -13,6 +13,11 @@
   a {
     text-decoration: none;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: var(--dark-color);
+  }
 }
 
 .inner {
@@ -20,7 +25,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  width: 760px;
+  width: 1060px;
   max-width: 100%;
 }
 
