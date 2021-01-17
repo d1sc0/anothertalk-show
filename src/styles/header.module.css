@@ -7,7 +7,7 @@
   padding: 20px;
 
   :global .dark-theme :local & {
-    background: #252627;
+    background: var(--dark-dark-dark);
   }
 
   a {
@@ -43,7 +43,7 @@
   display: inline-block;
   width: 12px;
   height: 1.2rem;
-  background: #e60000;
+  background: var(--dark-color-accent);
   margin-left: 5px;
   margin-top: 2px;
   border-radius: 1px;
