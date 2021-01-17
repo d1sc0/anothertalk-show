@@ -176,6 +176,7 @@
 .player {
   background-color: var(--dark-dark-dark);
   border-radius: 10px;
+  border: 0px dashed var(--dark-dark-dark);
   margin-top: 40px;
   padding: 5px 0px 20px 20px;
 }
