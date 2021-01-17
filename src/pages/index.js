@@ -6,9 +6,13 @@ import style from '../styles/content.module.css'
 
 
 const IndexPage = ({ data }) => {
+  const {
+    frontmatter: { title, date, path, url, duration, season, episodeNumber },
+  } = data.allMdx.edges[0].node
+  
   const latestEpisode = data.allMdx.edges[0].node
-  const mins = Math.floor(latestEpisode.frontmatter.duration/60)
-  const secs = latestEpisode.frontmatter.duration - mins * 60
+  const mins = Math.floor(duration/60)
+  const secs = duration - mins * 60
   return (
   <Layout>
     <SEO
@@ -23,18 +27,18 @@ const IndexPage = ({ data }) => {
       <div className={style.player}>
         <h1>LATEST EPISODE</h1>
         <h2>
-          {latestEpisode.frontmatter.title}
+          {title}
         </h2>
           <div className={style.meta}>
-              S{latestEpisode.frontmatter.season}:E{latestEpisode.frontmatter.episodeNumber}
+              S{season}:E{episodeNumber}
               {' // '}
-              {latestEpisode.frontmatter.date}
+              {date}
               {' // '}
               {mins} mins {secs} secs
             </div>
-          {latestEpisode.frontmatter.url ? ( <audio src={latestEpisode.frontmatter.url} controls>Your browser does not support the audio player! <a href={latestEpisode.frontmatter.url}>You can download here instead</a></audio> ) : null}
+          {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
              
-          <Link to={latestEpisode.frontmatter.path} className={style.readMore}>
+          <Link to={path} className={style.readMore}>
               Read the show notes...
             </Link>
         </div>
