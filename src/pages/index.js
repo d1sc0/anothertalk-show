@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql} from 'gatsby'
+import { toKebabCase } from '../helpers'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import style from '../styles/content.module.css'
@@ -7,7 +8,7 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data }) => {
   const {
-    frontmatter: { title, date, path, url, duration, season, episodeNumber },
+    frontmatter: { title, date, path, url, duration, tags, season, episodeNumber },
   } = data.allMdx.edges[0].node
   
   const mins = Math.floor(duration / 60)
@@ -26,7 +27,7 @@ const IndexPage = ({ data }) => {
       <div className={style.player}>
         <h1>LATEST EPISODE</h1>
         <h2>
-          {title}
+          <Link to={path}>{title}</Link>
         </h2>
           <div className={style.meta}>
               S{season}:E{episodeNumber}
@@ -37,9 +38,16 @@ const IndexPage = ({ data }) => {
             </div>
           {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a><track kind='captions' label={title}/></audio> ) : null}
              
-          <Link to={path} className={style.readMore}>
-              Read the show notes...
-            </Link>
+{tags ? (
+              <div className={style.tags}>
+                {tags.map(tag => (
+                  <Link to={`/tag/${toKebabCase(tag)}/`} key={toKebabCase(tag)}>
+                    <span className={style.tag}>#{tag}</span>
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+
         </div>
       </div>
     </div>

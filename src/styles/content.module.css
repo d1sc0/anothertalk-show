@@ -128,3 +128,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
+.player h2 a {
+  text-decoration: none;
+}
