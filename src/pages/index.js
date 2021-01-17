@@ -10,7 +10,6 @@ const IndexPage = ({ data }) => {
     frontmatter: { title, date, path, url, duration, season, episodeNumber },
   } = data.allMdx.edges[0].node
   
-  const latestEpisode = data.allMdx.edges[0].node
   const mins = Math.floor(duration/60)
   const secs = duration - mins * 60
   return (
