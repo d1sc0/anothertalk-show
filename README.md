@@ -14,11 +14,11 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 - ~~test podcast feed - https://castfeedvalidator.com/~~
 - ~~update relevant episide/post meta~~
 - ~~think about subtitles for posts?~~
-- add subscription buttons to index page
+- ~~add subscription buttons to index page~~
+- ~~tidy up styling~~
 - write and format the about page
 - create a new gcp bucket for audio files
 - update contact form submission link
-- tidy up styling
 - record a test podcast - try out squadcast
 - clear out old content
 - reigster feeds in apple and google
