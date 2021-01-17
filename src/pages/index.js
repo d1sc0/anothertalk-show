@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, graphql} from 'gatsby'
-import { toKebabCase } from '../helpers'
 import Layout from '../components/layout'
+import Subscribe from '../components/subscribe'
+import Player from '../components/player'
 import SEO from '../components/seo'
 import style from '../styles/content.module.css'
 
@@ -21,35 +22,33 @@ const IndexPage = ({ data }) => {
     />
     <div className={style.post}>
       <div className={style.postContent}>
-        <p className={style.introText}>
-          A talk show where a <Link to="/about">fairly ordinary host </Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
-        </p>
-      <div className={style.player}>
-        <h1>LATEST EPISODE</h1>
-        <h2>
-          <Link to={path}>{title}</Link>
-        </h2>
-          <div className={style.meta}>
-            {subtitle}<br/>
-              S{season}:E{episodeNumber}
-              {' // '}
-              {date}
-              {' // '}
-              {mins} mins {secs} secs
-            </div>
-          {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a><track kind='captions' label={title}/></audio> ) : null}
-             
-{tags ? (
-              <div className={style.tags}>
-                {tags.map(tag => (
-                  <Link to={`/tag/${toKebabCase(tag)}/`} key={toKebabCase(tag)}>
-                    <span className={style.tag}>#{tag}</span>
-                  </Link>
-                ))}
-              </div>
-            ) : null}
 
+        <div className={style.home}>
+            <div className={style.homeImage}>
+               
+            </div>  
+
+            <div className={style.homeText}>
+              A talk show where a <Link to="/about">fairly ordinary host </Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
+            </div>
         </div>
+
+        
+        <Player 
+          title={title}
+          date={date}
+          path={path}
+          tags={tags}
+          url={url}
+          season={season}
+          episodeNumber={episodeNumber}
+          subtitle={subtitle} 
+          mins={mins}
+          secs={secs}
+        />
+
+        <Subscribe />
+
       </div>
     </div>
   </Layout>

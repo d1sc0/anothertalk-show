@@ -33,7 +33,7 @@
 }
 
 .coverImage {
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 40px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -63,14 +63,6 @@
 
 .postContent {
   position: relative;
-}
-
-.introText {
-  font-size: 2rem;
-  font-weight: bold;
-  a {
-    color: #e60000;
-  }
 }
 
 .postExcerpt {
@@ -112,23 +104,130 @@
   width: 100%;
 }
 
-.player {
+.subscribe {
+  text-align: center;
+}
+
+.subscribe h2 {
+  font-weight: normal;
+  margin-top: 40px;
+  justify-content: center;
+  font-size: 1.625rem;
+}
+
+.subbuttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  @media (--phone) {
+    justify-content: center;
+  }
+}
+
+.subbuttons button {
+  width: 32%;
+  height: 50px;
+  font-size: 1.1rem;
+  border: 0.1em solid var(--dark-color-accent);
   background-color: var(--dark-color-accent);
+  color: var(--dark-background);
   border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s;
+  margin-bottom: 5px;
+
+  @media (--phone) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.subbuttons button a {
+  text-decoration: none;
+  color: var(--dark-color-background);
+}
+
+.subbuttons button:hover {
+  border: 0.1em solid var(--dark-color);
+  color: var(--dark-background);
+  background-color: var(--dark-color);
+  cursor: pointer;
+}
+
+.subbuttons button a:hover {
+  text-decoration: none;
+  color: var(--dark-background);
+}
+.subscribe a {
+  font-size: 0.95rem;
+  justify-content: center;
+  color: var(--dark-color);
+}
+
+.subscribe a:hover {
+  color: var(--dark-color-accent);
+}
+
+.player {
+  background-color: var(--dark-color-secondary);
+  border-radius: 10px;
+  margin-top: 40px;
   padding: 5px 0px 20px 20px;
 }
 
-.player h1 {
+.player h2 {
   font-weight: normal;
   margin-top: 5px;
   font-size: 0.95rem;
 }
 
-.player h2 {
+.player h3 {
   margin-bottom: 0px;
+  font-size: 1.625rem;
   margin-top: 0px;
 }
 
-.player h2 a {
+.player h3 a {
   text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homeImage {
+  width: 45%;
+  height: 300px;
+  background-color: #252627;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  @media (--phone) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.homeText {
+  width: 50%;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  a {
+    color: var(--dark-color-accent);
+  }
+
+  @media (--phone) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
