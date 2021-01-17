@@ -85,7 +85,7 @@ export const episodesQuery = graphql`
           excerpt
           frontmatter {
             title
-            date(formatString: "DD MMMM YYYY")
+            date(formatString: "D MMMM YYYY")
             path
             tags
             url
