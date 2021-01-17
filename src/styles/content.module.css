@@ -137,10 +137,11 @@
   }
 }
 
-.subbuttons button {
+.subscribe .subbuttons a {
   width: 32%;
   height: 50px;
   font-size: 1.1rem;
+  padding-top: 10px;
   border: 0.1em solid var(--dark-color-accent);
   background-color: var(--dark-color-accent);
   color: var(--dark-background);
@@ -151,6 +152,7 @@
   text-align: center;
   transition: all 0.2s;
   margin-bottom: 5px;
+  text-decoration: none;
 
   @media (--phone) {
     width: 100%;
@@ -158,22 +160,13 @@
   }
 }
 
-.subbuttons button a {
-  text-decoration: none;
-  color: var(--dark-color-background);
-}
-
-.subbuttons button:hover {
+.subscribe .subbuttons a:hover {
   border: 0.1em solid var(--dark-color);
   color: var(--dark-background);
   background-color: var(--dark-color);
   cursor: pointer;
 }
 
-.subbuttons button a:hover {
-  text-decoration: none;
-  color: var(--dark-background);
-}
 .subscribe a {
   font-size: 0.95rem;
   justify-content: center;
