@@ -8,7 +8,7 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data }) => {
   const {
-    frontmatter: { title, date, path, url, duration, tags, season, episodeNumber },
+    frontmatter: { title, date, path, url, duration, tags, season, episodeNumber, subtitle },
   } = data.allMdx.edges[0].node
   
   const mins = Math.floor(duration / 60)
@@ -30,6 +30,7 @@ const IndexPage = ({ data }) => {
           <Link to={path}>{title}</Link>
         </h2>
           <div className={style.meta}>
+            {subtitle}<br/>
               S{season}:E{episodeNumber}
               {' // '}
               {date}
@@ -74,6 +75,7 @@ export const data = graphql`
             duration
             season
             episodeNumber
+            subtitle
           }
           fields {
             readingTime {

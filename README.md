@@ -14,7 +14,8 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 - write and format the about page
 - add subscription buttons to index page
 - test podcast feed - https://castfeedvalidator.com/
-- add subtitles and update relevant episide/post meta
+- ~~update relevant episide/post meta~~
+- ~~think about subtitles for posts?~~
 - create a new gcp bucket for audio files
 - update contact form submission link
 - update the about page - or hide for now!

@@ -1,6 +1,6 @@
 ---
 title: Experiment Zone
-subtitle: Is this a safe space to play?
+subtitle: 'GUESTS: Tom Thumb, David Frank'
 status: published
 date: 2021-01-05
 publicationDate: 2021-01-05

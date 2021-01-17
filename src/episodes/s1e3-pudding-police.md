@@ -1,6 +1,6 @@
 ---
 title: Pudding Police
-subtitle: Beware the pudding police are on the prowl.
+subtitle: 'GUEST: Eric Eelboy'
 status: published
 date: 2021-01-04
 publicationDate: 2021-01-04

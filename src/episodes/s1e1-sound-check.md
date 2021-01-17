@@ -1,6 +1,6 @@
 ---
 title: Sound Check
-subtitle: Sound checking.
+subtitle: 'GUESTS: Thomas and Teressa MIkenvoss'
 status: published
 date: 2021-01-01
 publicationDate: 2021-01-01

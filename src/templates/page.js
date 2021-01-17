@@ -8,7 +8,7 @@ import Episode from "../components/episode"
 
 const EpisodePostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, tags, url, duration, season, episodeNumber },
+    frontmatter: { title, date, path, tags, url, duration, season, episodeNumber, subtitle },
     excerpt,
     fields: { readingTime },
     id,
@@ -33,6 +33,7 @@ const EpisodePostTemplate = ({ data, pageContext }) => {
         duration={duration}
         season={season}
         episodeNumber={episodeNumber}
+        subtitle={subtitle}
       />
     </Layout>
   )
@@ -60,6 +61,7 @@ export const pageQuery = graphql`
         duration
         season
         episodeNumber
+        subtitle
       }
       fields {
         readingTime {

@@ -19,6 +19,7 @@ const Episode = ({
   episodeNumber,
   body,
   previousPost,
+  subtitle,
   readingTime,
   nextPost,
 }) => {
@@ -38,6 +39,7 @@ const Episode = ({
             </h1>
 
             <div className={style.meta}>
+              {subtitle}<br/>
               S{season}:E{episodeNumber}
               {' // '}
               {date}
@@ -67,6 +69,7 @@ const Episode = ({
           <>
             <h1 className={style.title}>{title}</h1>
             <div className={style.meta}>
+              {subtitle}<br/>
               S{season}:E{episodeNumber}
               {' // '}
               {date}

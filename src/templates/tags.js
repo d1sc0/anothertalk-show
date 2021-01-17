@@ -35,7 +35,8 @@ const Tags = ({
               tags,
               duration, 
               season, 
-              episodeNumber
+              episodeNumber,
+              subtitle
             },
             fields: { readingTime },
           } = node
@@ -52,6 +53,7 @@ const Tags = ({
               episodeNumber={episodeNumber}
               readingTime={readingTime}
               excerpt={excerpt}
+              subtitle={subtitle}
             />
           )
         })}
@@ -95,6 +97,7 @@ export const episodesQuery = graphql`
             duration
             season
             episodeNumber
+            subtitle
           }
           fields {
             readingTime {

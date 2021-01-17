@@ -31,6 +31,7 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               duration,
               season,
               episodeNumber,
+              subtitle,
             },
             fields: { readingTime },
           } = node
@@ -48,6 +49,7 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               duration={duration}
               season={season}
               episodeNumber={episodeNumber}
+              subtitle={subtitle}
             />
           )
         })}
@@ -92,6 +94,7 @@ export const episodesQuery = graphql`
             duration
             season
             episodeNumber
+            subtitle
           }
           fields {
             readingTime {

@@ -1,6 +1,6 @@
 ---
 title: Bang Tidy
-subtitle: bang bang cauliflower.
+subtitle: 'GUEST: The fabulous Lizzy Stessman'
 status: published
 date: 2021-01-02
 publicationDate: 2021-01-02
