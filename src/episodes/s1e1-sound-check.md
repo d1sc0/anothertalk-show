@@ -6,8 +6,8 @@ date: 2021-01-01
 publicationDate: 2021-01-01
 path: /episodes/s1e1-sound-check
 slug: /episodes/s1e1-sound-check
-tags: ['Design', 'Technology', 'Change', 'Interview']
-categories: ['Design', 'Technology', 'Change', 'Interview']
+tags: ['Interview', 'Chat', 'Comedian', 'Christmas']
+categories: ['Interview', 'Chat', 'Comedian', 'Christmas']
 type: podcast-episode
 guid: ATS_1_001
 author: Another Talk Show

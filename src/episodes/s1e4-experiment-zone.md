@@ -6,8 +6,8 @@ date: 2021-01-05
 publicationDate: 2021-01-05
 path: /episodes/s1e4-experiment-zone
 slug: /episodes/s1e4-experiment-zone
-tags: ['Design', 'Technology', 'Change', 'Interview']
-categories: ['Design', 'Technology', 'Change', 'Interview']
+tags: ['Interview', 'Chat', 'Comedian', 'Christmas']
+categories: ['Interview', 'Chat', 'Comedian', 'Christmas']
 type: podcast-episode
 guid: ATS_1_004
 author: Another Talk Show

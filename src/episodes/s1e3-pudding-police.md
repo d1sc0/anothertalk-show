@@ -6,8 +6,8 @@ date: 2021-01-04
 publicationDate: 2021-01-04
 path: /episodes/s1e3-pudding-police
 slug: /episodes/s1e3-pudding-police
-tags: ['Design', 'Technology', 'Change', 'Interview']
-categories: ['Design', 'Technology', 'Change', 'Interview']
+tags: ['Interview', 'Chat', 'Chef']
+categories: ['Interview', 'Chat', 'Chef']
 type: podcast-episode
 guid: ATS_1_003
 author: Another Talk Show
