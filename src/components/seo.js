@@ -24,7 +24,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
   } = data.site.siteMetadata
   const metaTitle = title || siteTitle
   const metaDescription = description || siteDescription
-  const cardURL = siteUrl + '/behuman_small.png'
+  const cardURL = siteUrl + '/ats_small.png'
   return (
     <>
     <Helmet
@@ -81,7 +81,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         )
         .concat(meta)}
     />
-    <Helmet><link rel='alternate' type='application/rss+xml' title='Be Human Podcast Feed' href='/podcast-rss-feed.xml' />
+    <Helmet><link rel='alternate' type='application/rss+xml' title='Another Talk Show Podcast Feed' href='/podcast-rss-feed.xml' />
     </Helmet>
     </>
   )
@@ -92,13 +92,13 @@ SEO.defaultProps = {
   meta: [],
   keywords: [
     'podcast',
-    'design',
-    'human',
+    'talk show',
+    'interviews',
     'documentary',
     'discussion',
-    'change',
-    'technology',
-    'human centered design',
+    'people',
+    'entertainment',
+    'topical',
   ],
 }
 
