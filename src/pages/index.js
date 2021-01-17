@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => {
               {' // '}
               {mins} mins {secs} secs
             </div>
-          {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
+          {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a><track kind='captions' label={title}/></audio> ) : null}
              
           <Link to={path} className={style.readMore}>
               Read the show notes...

@@ -16,7 +16,7 @@ episodeNumber: 2
 episodeType: full
 url: https://storage.googleapis.com/behuman-podcast/test_file2.mp3
 size: 206820339
-duration: 3414
+duration: 1414
 explicit: false
 ---
 

@@ -45,7 +45,7 @@ const Episode = ({
               {mins} mins {secs} secs
             </div>
 
-            {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
+            {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a><track kind='captions' label={title}/></audio> ) : null}
 
             <p className={style.postExcerpt}>{excerpt}</p>
             
@@ -84,7 +84,7 @@ const Episode = ({
               </div>
             ) : null}
             
-            {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
+            {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a><track kind='captions' label={title}/></audio> ) : null}
              
             <MDXRenderer>{body}</MDXRenderer>
             <Navigation
