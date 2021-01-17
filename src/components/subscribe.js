@@ -10,7 +10,7 @@ const Subscribe = () => {
             <a href='https://google.com'>Google Podcasts</a>
             <a href='https://google.com'>Spotify Podcasts</a>
          </div> 
-         <a href='/podcast-feed-rss.xml'>RSS Feed</a>
+         <a href='/podcast-rss-feed.xml'>RSS Feed</a>
         </div>
   )
 }
