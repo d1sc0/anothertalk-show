@@ -4,15 +4,18 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 
 ## Things to do
 
-- tidy up from cloning blog - done
-- convert/update to support mdx plugin - done
-- add and test gatsby-remark-audio - done
-- add/configure gatsby-plugin-podcast-feed-mdx - done
-- setup gcp bucket for audio files - done
-- update SEO content - done
-- sort out new images for logo and podcast cover
-- test podcast feed - https://castfeedvalidator.com/ -
+- ~~tidy up from cloning blog site~~
+- ~~convert/update to support mdx plugin~~
+- ~~add and test gatsby-remark-audio~~
+- ~~add/configure gatsby-plugin-podcast-feed-mdx~~
+- ~~setup gcp bucket for audio files~~
+- ~~update SEO content~~
+- ~~sort out new images for logo and podcast cover~~
+- write and format the about page
+- add subscription buttons to index page
+- test podcast feed - https://castfeedvalidator.com/
 - add subtitles and update relevant episide/post meta
+- create a new gcp bucket for audio files
 - update contact form submission link
 - update the about page - or hide for now!
 - theme it up a little more
