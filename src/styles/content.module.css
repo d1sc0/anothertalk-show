@@ -111,3 +111,20 @@
 .imageFull {
   width: 100%;
 }
+
+.player {
+  background-color: var(--dark-color-accent);
+  border-radius: 10px;
+  padding: 5px 0px 20px 20px;
+}
+
+.player h1 {
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+.player h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

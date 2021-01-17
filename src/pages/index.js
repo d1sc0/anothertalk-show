@@ -7,6 +7,8 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data }) => {
   const latestEpisode = data.allMdx.edges[0].node
+  const mins = Math.floor(latestEpisode.frontmatter.duration/60)
+  const secs = latestEpisode.frontmatter.duration - mins * 60
   return (
   <Layout>
     <SEO
@@ -18,11 +20,24 @@ const IndexPage = ({ data }) => {
         <p className={style.introText}>
           A talk show where a <Link to="/about">fairly ordinary host </Link>interviews <Link to="/about">talented people</Link> who aren't yet famous!
         </p>
-        <p className={style.introText}>
-          <p>Latest Episode: {latestEpisode.frontmatter.title}</p>
+      <div className={style.player}>
+        <h1>LATEST EPISODE</h1>
+        <h2>
+          {latestEpisode.frontmatter.title}
+        </h2>
+          <div className={style.meta}>
+              S{latestEpisode.frontmatter.season}:E{latestEpisode.frontmatter.episodeNumber}
+              {' // '}
+              {latestEpisode.frontmatter.date}
+              {' // '}
+              {mins} mins {secs} secs
+            </div>
           {latestEpisode.frontmatter.url ? ( <audio src={latestEpisode.frontmatter.url} controls>Your browser does not support the audio player! <a href={latestEpisode.frontmatter.url}>You can download here instead</a></audio> ) : null}
              
-        </p>
+          <Link to={latestEpisode.frontmatter.path} className={style.readMore}>
+              Read the show notes...
+            </Link>
+        </div>
       </div>
     </div>
   </Layout>
@@ -45,6 +60,9 @@ export const data = graphql`
             path
             tags
             url
+            duration
+            season
+            episodeNumber
           }
           fields {
             readingTime {

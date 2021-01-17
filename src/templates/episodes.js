@@ -15,7 +15,7 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
     <>
       <SEO
         title="Episodes"
-        description="Episodes of Be Human"
+        description="Episodes of Another Talk Show"
       />
       <Layout>
         {episodes.map(({ node }) => {
@@ -28,6 +28,9 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               path,
               tags,
               url,
+              duration,
+              season,
+              episodeNumber,
             },
             fields: { readingTime },
           } = node
@@ -42,6 +45,9 @@ const Episodes = ({ data, pageContext: { nextPagePath, previousPagePath } }) => 
               tags={tags}
               url={url}
               excerpt={excerpt}
+              duration={duration}
+              season={season}
+              episodeNumber={episodeNumber}
             />
           )
         })}
@@ -83,6 +89,9 @@ export const episodesQuery = graphql`
             path
             tags
             url
+            duration
+            season
+            episodeNumber
           }
           fields {
             readingTime {

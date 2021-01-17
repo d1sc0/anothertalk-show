@@ -14,6 +14,9 @@ const Episode = ({
   excerpt,
   tags,
   url,
+  duration, 
+  season,
+  episodeNumber,
   body,
   previousPost,
   readingTime,
@@ -23,7 +26,8 @@ const Episode = ({
   const previousLabel = previousPost && previousPost.frontmatter.title
   const nextPath = nextPost && nextPost.frontmatter.path
   const nextLabel = nextPost && nextPost.frontmatter.title
-
+  const mins = Math.floor(duration/60)
+  const secs = duration - mins * 60
   return (
     <div className={style.post}>
       <div className={style.postContent}>
@@ -34,9 +38,11 @@ const Episode = ({
             </h1>
 
             <div className={style.meta}>
-              Posted: {date}
+              S{season}:E{episodeNumber}
               {' // '}
-              {readingTime.text}
+              {date}
+              {' // '}
+              {mins} mins {secs} secs
             </div>
 
             {url ? ( <audio src={url} controls>Your browser does not support the audio player! <a href={url}>You can download here instead</a></audio> ) : null}
@@ -61,9 +67,11 @@ const Episode = ({
           <>
             <h1 className={style.title}>{title}</h1>
             <div className={style.meta}>
+              S{season}:E{episodeNumber}
+              {' // '}
               {date}
               {' // '}
-              {readingTime.text}
+              {mins} mins {secs} secs
             </div>
 
             {tags ? (

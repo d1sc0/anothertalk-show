@@ -26,6 +26,9 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
               path
               title
               tags
+              season
+              duration
+              episodeNumber
             }
             fileAbsolutePath
           }

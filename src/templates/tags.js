@@ -33,6 +33,9 @@ const Tags = ({
               date,
               path,
               tags,
+              duration, 
+              season, 
+              episodeNumber
             },
             fields: { readingTime },
           } = node
@@ -44,6 +47,9 @@ const Tags = ({
               date={date}
               path={path}
               tags={tags}
+              duation={duration}
+              season={season}
+              episodeNumber={episodeNumber}
               readingTime={readingTime}
               excerpt={excerpt}
             />
@@ -86,6 +92,9 @@ export const episodesQuery = graphql`
             date(formatString: "DD MMMM YYYY")
             path
             tags
+            duration
+            season
+            episodeNumber
           }
           fields {
             readingTime {
