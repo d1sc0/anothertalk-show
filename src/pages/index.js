@@ -10,7 +10,7 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data}) => {
   
-  const homeImage =  data.homeImage.childImageSharp.fixed
+  const homeImage =  data.homeImage.childImageSharp.fluid
   const {
     frontmatter: { title, date, path, url, duration, tags, season, episodeNumber, subtitle },
   } = data.allMdx.edges[0].node
@@ -27,9 +27,8 @@ const IndexPage = ({ data}) => {
       <div className={style.postContent}>
 
         <div className={style.home}>
-            
             <Image
-              fixed={homeImage}
+              fluid={homeImage}
               className={style.homeImage}
               alt="Another Talk Show Cover"
             />
@@ -92,8 +91,8 @@ export const data = graphql`
     }
     homeImage: file(relativePath: { eq: "anothertalk-show.jpg" }) {
       childImageSharp {
-        fixed(width: 615, quality: 100) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 615, quality: 100){
+          ...GatsbyImageSharpFluid
         }
       }
     }
