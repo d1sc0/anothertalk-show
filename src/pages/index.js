@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql} from 'gatsby'
 import Layout from '../components/layout'
-import Image from 'gatsby-image'
+// import Image from 'gatsby-image'
 import Subscribe from '../components/subscribe'
 import Player from '../components/player'
 import SEO from '../components/seo'
@@ -10,7 +10,7 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data}) => {
   
-  const homeImage =  data.homeImage.childImageSharp.fluid
+  // const homeImage =  data.homeImage.childImageSharp.fluid
   const {
     frontmatter: { title, date, path, url, duration, tags, season, episodeNumber, subtitle },
   } = data.allMdx.edges[0].node
@@ -39,6 +39,8 @@ const IndexPage = ({ data}) => {
             </div>
         </div>
 
+                <Subscribe />
+
         <Player 
           title={title}
           date={date}
@@ -52,7 +54,6 @@ const IndexPage = ({ data}) => {
           secs={secs}
         />
 
-        <Subscribe />
 
       </div>
     </div>

@@ -1,20 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+// import Image from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import style from '../styles/content.module.css'
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaGithub,
-  FaYoutube,
-  FaStrava,
-} from 'react-icons/fa'
 
 const AboutPage = ({ data }) => {
-  const aboutImage = data.aboutImage.childImageSharp.fluid
+  // const aboutImage = data.aboutImage.childImageSharp.fluid
   return (
     <Layout>
       <SEO
