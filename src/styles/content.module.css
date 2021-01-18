@@ -210,6 +210,8 @@
 
 .homeImage {
   width: 58%;
+  /* remove height once image inserted */
+  height: 400px;
   background-color: #252627;
   margin-bottom: 30px;
   border-radius: 10px;

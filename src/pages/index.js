@@ -27,12 +27,12 @@ const IndexPage = ({ data}) => {
       <div className={style.postContent}>
 
         <div className={style.home}>
-            <Image
+            {/* <Image
               fluid={homeImage}
               className={style.homeImage}
               alt="Another Talk Show Cover"
-            />
-            
+            /> */}
+            <div className={style.homeImage}></div>
 
             <div className={style.homeText}>
               A talk show where a <Link to="/about">fairly ordinary host</Link> interviews <Link to="/about">talented people</Link> who aren't yet famous!
