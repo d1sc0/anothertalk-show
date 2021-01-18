@@ -1,7 +1,7 @@
 ---
 title: Sound Check
 subtitle: 'GUESTS: Thomas and Teressa MIkenvoss'
-status: published
+status: draft
 date: 2021-01-01
 publicationDate: 2021-01-01
 path: /episodes/s1e1-sound-check

@@ -1,6 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import style from '../styles/content.module.css'
+import {
+  FaTwitter,
+  FaInstagram,
+  FaPodcast,
+  FaSpotify
+} from 'react-icons/fa'
+import { SiGooglepodcasts } from "react-icons/si";
 const Footer = () => {
   return (
     <footer>
@@ -14,6 +21,23 @@ const Footer = () => {
         <Link to="/contact">Contact</Link>
         {' // '}
         <a href="#top">Top</a>
+      </p>
+      <p>
+      <a href="https://twitter.com/#" className={style.social}>
+        <FaTwitter size="1.5rem" />
+      </a>
+      <a href="https://instagram.com/#" className={style.social}>
+        <FaInstagram size="1.5rem" />
+      </a>
+      <a href="https://apple.com/#" className={style.social}>
+        <FaPodcast size="1.5rem" />
+      </a>
+      <a href="https://google.com/#" className={style.social}>
+        <SiGooglepodcasts size="1.5rem" />
+      </a>
+      <a href="https://spotify.com/#" className={style.social}>
+        <FaSpotify size="1.5rem" />
+      </a>
       </p>
       <p>
         Built with{' '}
