@@ -7,7 +7,7 @@ const Form = () => {
         id="fs-frm"
         name="simple-contact-form"
         accept-charset="utf-8"
-        action="https://formspree.io/xlegajel"
+        action="https://formspree.io/f/mvovlgwn"
         method="post"
       >
         <fieldset id="fs-frm-inputs">
