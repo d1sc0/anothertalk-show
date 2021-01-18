@@ -3,6 +3,7 @@ import style from '../styles/form.module.css'
 const Form = () => {
   return (
     <>
+      <div className={style.formcontainer}>
       <form
         id="fs-frm"
         name="simple-contact-form"
@@ -12,7 +13,7 @@ const Form = () => {
       >
         <fieldset id="fs-frm-inputs">
           <label htmlFor="full-name" className={style.controllabel}>
-            Full Name
+            Your Name
           </label>
           <input
             type="text"
@@ -24,7 +25,7 @@ const Form = () => {
             required
           />
           <label htmlFor="email-address" className={style.controllabel}>
-            Email Address
+            Your Email Address
           </label>
           <input
             type="email"
@@ -36,7 +37,7 @@ const Form = () => {
             required
           />
           <label htmlFor="message" className={style.controllabel}>
-            Message
+            Your Message
           </label>
           <textarea
             rows="3"
@@ -60,6 +61,7 @@ const Form = () => {
           Send
         </button>
       </form>
+    </div>
     </>
   )
 }

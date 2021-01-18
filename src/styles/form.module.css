@@ -1,3 +1,17 @@
+.formcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 20px;
+  width: 70%;
+  @media (--phone) {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
 fieldset {
   min-width: 0;
   padding: 0;
@@ -42,21 +56,26 @@ input {
 .contactbutton {
   position: relative;
   display: block;
-  align-items: center;
-  justify-content: center;
-  background: #02862e;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
   width: 100%;
+  border: 0.1em solid var(--dark-color-accent);
+  background-color: var(--dark-color-accent);
+  color: var(--dark-background);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
   cursor: pointer;
   appearance: none;
   padding: 15px;
   margin-top: 20px;
 
   :global .dark-theme :local & {
-    background: var(--dark-background-secondary);
+    background: var(--dark-color-accent);
   }
 
   + .button {
