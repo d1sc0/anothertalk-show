@@ -46,8 +46,8 @@
 
 .cursor {
   display: inline-block;
-  width: 12px;
-  height: 1.2rem;
+  width: 15px;
+  height: 1.5rem;
   background: var(--dark-color-accent);
   margin-left: 5px;
   margin-top: 2px;
@@ -57,7 +57,7 @@
 
 .text,
 .mark {
-  font-size: 21px;
+  font-size: 25px;
 }
 
 .right {
