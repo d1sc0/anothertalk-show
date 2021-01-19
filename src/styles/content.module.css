@@ -274,6 +274,6 @@ audio {
 }
 
 strong {
-  color: var(--dark-color-accent);
+  /* color: var(--dark-color-accent); */
   font-weight: bold;
 }
