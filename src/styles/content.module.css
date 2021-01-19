@@ -249,13 +249,15 @@ audio {
   }
 
   .aboutLink {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     color: var(--dark-color);
   }
   .aboutLink:hover {
-    font-size: 1rem;
-    font-weight: normal;
+    color: var(--dark-color-accent);
+  }
+
+  .accent {
     color: var(--dark-color-accent);
   }
 

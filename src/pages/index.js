@@ -35,7 +35,7 @@ const IndexPage = ({ data}) => {
             <div className={style.homeImage}></div>
 
             <div className={style.homeText}>
-              A talk show where a <Link to="/about">fairly ordinary host</Link> interviews <Link to="/about">interesting people</Link> who aren't famous.<br/>
+              A talk show where a <span className={style.accent}>fairly ordinary host</span> interviews <span className={style.accent}>interesting people</span> who aren't famous.<br/>
               <Link to="/about" className={style.aboutLink}>Find out more...</Link>
             </div>
         </div>
