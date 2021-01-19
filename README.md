@@ -16,10 +16,12 @@ Experiment putting together a podcast site -built with love using [gatbsy.js](ht
 - ~~think about subtitles for posts?~~
 - ~~add subscription buttons to index page~~
 - ~~tidy up styling~~
-- write and format the about page
+- ~~write and format the about page~~
 - ~~create a new gcp bucket for audio files~~
 - ~~update contact form submission link~~
-- record a test podcast - try out squadcast
+- get a suitable imeg/logo for home page and cover
+- record a test podcast
+- try a remote recording - possibly trying out squadcast
 - clear out old content
 - reigster feeds in apple and google
 - update subscription links on homepage
