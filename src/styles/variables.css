@@ -7,14 +7,13 @@
   --light-border-color: #dcdcdc;
 
   /* dark theme colors */
-  --dark-background: #292a2d;
-  --dark-dark-dark: #252627;
-  --dark-background-secondary: #3b3d42;
-  --dark-color: #eaeaea;
-  --dark-color-secondary: #73747b;
-  --dark-color-accent: #e60000;
-  --dark-color-accent2: #80a9f5;
+  --dark-dark-accent: #252627;
+  --dark-background: #3f4146;
+  --dark-color: #f5f4f4;
+  --dark-color-accent: #fa4242;
   --dark-border-color: #4a4b50;
+  /* --dark-background-secondary: #3b3d42; */
+  /* --dark-color-secondary: #73747b; */
 
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);

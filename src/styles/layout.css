@@ -149,14 +149,14 @@ code {
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-feature-settings: normal;
   font-weight: normal;
-  background: var(--light-background-secondary);
+  background: var(--light-background);
   padding: 1px 6px;
   margin: 0 2px;
   border-radius: 5px;
   font-size: 0.75rem;
 
   .dark-theme & {
-    background: var(--dark-background-secondary);
+    background: var(--dark-background);
   }
 }
 
@@ -220,10 +220,10 @@ td {
 }
 
 th {
-  background: var(--light-background-secondary);
+  background: var(--light-background);
 
   .dark-theme & {
-    background: var(--dark-background-secondary);
+    background: var(--dark-background);
   }
 }
 
@@ -291,10 +291,10 @@ hr {
   padding: 10px 20px;
   border-radius: 10px;
   width: calc(100% - 40px);
-  background: var(--light-background-secondary);
+  background: var(--light-background);
 
   .dark-theme & {
-    background: var(--dark-background-secondary);
+    background: var(--dark-background);
   }
 
   span {

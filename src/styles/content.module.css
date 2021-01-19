@@ -144,9 +144,9 @@
   height: 50px;
   font-size: 1.1rem;
   padding-top: 10px;
-  border: 0.1em solid var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--dark-background);
+  border: 0.1em solid var(--dark-color-accent);
+  background-color: var(--dark-color-accent);
+  color: var(--dark-dark-accent);
   border-radius: 10px;
   box-sizing: border-box;
   text-decoration: none;
@@ -163,9 +163,9 @@
 }
 
 .subscribe .subbuttons a:hover {
-  border: 0.1em solid var(--dark-color-accent);
+  border: 0.1em solid var(--dark-color);
   color: var(--dark-background);
-  background-color: var(--dark-color-accent);
+  background-color: var(--dark-color);
   cursor: pointer;
 }
 
@@ -180,9 +180,9 @@
 }
 
 .player {
-  background-color: var(--dark-dark-dark);
+  background-color: var(--dark-dark-accent);
   border-radius: 10px;
-  border: 0px dashed var(--dark-dark-dark);
+  border: 0px dashed var(--dark-dark-accent);
   margin-top: 40px;
   padding: 5px 0px 20px 20px;
 }
@@ -228,7 +228,7 @@ audio {
   width: 58%;
   /* remove height once image inserted */
   height: 360px;
-  background-color: #252627;
+  background-color: var(--dark-dark-accent);
   margin-bottom: 20px;
   border-radius: 10px;
 
@@ -274,6 +274,6 @@ audio {
 }
 
 strong {
-  /* color: var(--dark-color-accent); */
+  color: var(--dark-color-accent);
   font-weight: bold;
 }

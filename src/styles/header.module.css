@@ -7,7 +7,7 @@
   padding: 20px;
 
   :global .dark-theme :local & {
-    background: var(--dark-dark-dark);
+    background: var(--dark-background);
   }
 
   a {

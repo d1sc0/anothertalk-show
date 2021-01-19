@@ -134,7 +134,7 @@
   z-index: 99;
 
   :global .dark-theme :local & {
-    background: var(--dark-background-secondary);
+    background: var(--dark-background);
   }
 
   li {
