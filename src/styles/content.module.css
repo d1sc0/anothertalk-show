@@ -100,15 +100,16 @@
 }
 
 .imageRight {
-  width: 45%;
+  width: 35%;
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 10px;
 
   @media (--phone) {
     float: none;
     width: 100%;
     margin-left: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -244,6 +245,17 @@ audio {
   font-weight: bold;
 
   a {
+    color: var(--dark-color-accent);
+  }
+
+  .aboutLink {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--dark-color);
+  }
+  .aboutLink:hover {
+    font-size: 1rem;
+    font-weight: normal;
     color: var(--dark-color-accent);
   }
 
