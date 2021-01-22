@@ -244,7 +244,7 @@ audio {
 
   @media (--phone) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -254,6 +254,10 @@ audio {
   line-height: 3.5rem;
   font-size: 2.9rem;
   font-weight: bold;
+  @media (--phone) {
+    line-height: 2.7rem;
+    font-size: 2.2rem;
+  }
 
   a {
     color: var(--color);
