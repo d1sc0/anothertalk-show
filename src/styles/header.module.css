@@ -1,5 +1,5 @@
 .header {
-  background: #fafafa;
+  background: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   padding: 20px;
 
   :global .dark-theme :local & {
-    background: var(--dark-background);
+    background: var(--background);
   }
 
   a {
@@ -16,7 +16,7 @@
 
   a:hover {
     text-decoration: none;
-    color: var(--dark-color);
+    color: var(--color-accent);
   }
 }
 
@@ -48,7 +48,7 @@
   display: inline-block;
   width: 15px;
   height: 1.5rem;
-  background: var(--dark-color-accent);
+  background: var(--color-accent);
   margin-left: 5px;
   margin-top: 2px;
   border-radius: 1px;

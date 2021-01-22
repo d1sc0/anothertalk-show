@@ -1,17 +1,12 @@
 :root {
   /* light theme color */
-  --light-background: #fff;
-  --light-background-secondary: #eaeaea;
-  --light-color: #222;
-  --light-color-secondary: #999;
-  --light-border-color: #dcdcdc;
 
-  /* dark theme colors */
-  --dark-dark-accent: #252627;
-  --dark-background: #3f4146;
-  --dark-color: #f5f4f4;
-  --dark-color-accent: #fa4242;
-  --dark-border-color: #4a4b50;
+  --background-accent: #66686d;
+  --background: #ffffff;
+  --color: #252627;
+  --color-accent: #fa4242;
+  --border-color: #66686d;
+
   /* --dark-background-secondary: #3b3d42; */
   /* --dark-color-secondary: #73747b; */
 

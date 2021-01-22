@@ -21,7 +21,7 @@
   appearance: none;
 
   :global .dark-theme :local & {
-    background: var(--dark-background);
+    background: var(--dark-accent);
   }
 
   + .button {

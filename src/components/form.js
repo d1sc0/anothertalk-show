@@ -33,7 +33,7 @@ const Form = () => {
             name="_replyto"
             id="email-address"
             className={style.formcontrol}
-            placeholder="email@domain.tld"
+            placeholder="email@domain.com"
             required
           />
           <label htmlFor="message" className={style.controllabel}>

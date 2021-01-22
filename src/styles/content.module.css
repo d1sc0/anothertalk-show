@@ -6,10 +6,10 @@
   margin: 0 auto 20px;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid var(--light-border-color);
+    border-bottom: 1px solid var(--border-color);
 
     :global .dark-theme :local & {
-      border-color: var(--dark-border-color);
+      border-color: var(--border-color);
     }
   }
 
@@ -56,7 +56,7 @@
 .tag:hover {
   display: inline-block;
   margin-right: 10px;
-  color: var(--dark-color-accent);
+  color: var(--color-accent);
 }
 
 .readMore {
@@ -65,11 +65,11 @@
   font-weight: bold;
   margin: 10px 0;
   font-size: 1rem;
-  color: var(--dark-color-accent);
+  color: var(--color);
 }
 
 .readMore:hover {
-  color: var(--dark-color);
+  color: var(--color-accent);
 }
 
 .postContent {
@@ -144,9 +144,9 @@
   height: 50px;
   font-size: 1.1rem;
   padding-top: 10px;
-  border: 0.1em solid var(--dark-color-accent);
-  background-color: var(--dark-color-accent);
-  color: var(--dark-dark-accent);
+  border: 0.1em solid var(--color);
+  background-color: var(--color);
+  color: var(--background);
   border-radius: 10px;
   box-sizing: border-box;
   text-decoration: none;
@@ -163,39 +163,40 @@
 }
 
 .subscribe .subbuttons a:hover {
-  border: 0.1em solid var(--dark-color);
-  color: var(--dark-background);
-  background-color: var(--dark-color);
+  border: 0.1em solid var(--color-accent);
+  color: var(--dark-accent);
+  background-color: var(--color-accent);
   cursor: pointer;
 }
 
 .subscribe a {
   font-size: 0.95rem;
   justify-content: center;
-  color: var(--dark-color);
+  color: var(--color);
 }
 
 .subscribe a:hover {
-  color: var(--dark-color-accent);
+  color: var(--color-accent);
 }
 
 .player {
-  background-color: var(--dark-dark-accent);
+  background-color: var(--background-accent);
   border-radius: 10px;
-  border: 0px dashed var(--dark-dark-accent);
+  color: var(--background);
+  border: 0px dashed var(--background-accent);
   margin-top: 40px;
   padding: 5px 0px 20px 20px;
 }
 
 audio {
-  width: 98%;
+  width: 95%;
   max-width: 790px;
   margin-top: 8px;
   margin-bottom: 5px;
 }
 
 .player audio {
-  width: 98%;
+  width: 95%;
   max-width: 1100px;
   margin-top: 8px;
   margin-bottom: 5px;
@@ -226,8 +227,6 @@ audio {
 
 .homeImage {
   width: 58%;
-  /* remove height once image inserted */
-  height: 360px;
   background-color: var(--dark-dark-accent);
   margin-bottom: 20px;
   border-radius: 10px;
@@ -241,24 +240,25 @@ audio {
 .homeText {
   width: 38%;
   margin-bottom: 5px;
+  line-height: 3.4rem;
   font-size: 2.5rem;
   font-weight: bold;
 
   a {
-    color: var(--dark-color-accent);
+    color: var(--color);
   }
 
   .aboutLink {
     font-size: 1.2rem;
     font-weight: normal;
-    color: var(--dark-color);
+    color: var(--color-accent);
   }
   .aboutLink:hover {
-    color: var(--dark-color-accent);
+    color: var(--color);
   }
 
   .accent {
-    color: var(--dark-color-accent);
+    color: var(--color-accent);
   }
 
   @media (--phone) {
@@ -274,6 +274,6 @@ audio {
 }
 
 strong {
-  color: var(--dark-color-accent);
+  color: var(--color-accent);
   font-weight: bold;
 }

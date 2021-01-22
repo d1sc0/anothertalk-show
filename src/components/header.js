@@ -38,11 +38,7 @@ const Header = props => {
     <>
       <Helmet>
         <body
-          className={
-            (userTheme || defaultTheme) === 'light'
-              ? 'light-theme'
-              : 'dark-theme'
-          }
+          className={'dark-theme'}
         />
       </Helmet>
       <header id="top" className={style.header}>
@@ -53,9 +49,8 @@ const Header = props => {
                 <img src={siteLogo.src} alt={siteLogo.alt} />
               ) : (
                 <>
-                  <span className={style.mark}>></span>
                   <span className={style.text}>{logoText}</span>
-                  <span className={style.cursor} />
+                  {/* <span className={style.cursor} /> */}
                 </>
               )}
             </div>

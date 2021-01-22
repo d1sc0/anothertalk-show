@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql} from 'gatsby'
 import Layout from '../components/layout'
-// import Image from 'gatsby-image'
+import Image from 'gatsby-image'
 import Subscribe from '../components/subscribe'
 import Player from '../components/player'
 import SEO from '../components/seo'
@@ -10,7 +10,7 @@ import style from '../styles/content.module.css'
 
 const IndexPage = ({ data}) => {
   
-  // const homeImage =  data.homeImage.childImageSharp.fluid
+  const homeImage =  data.homeImage.childImageSharp.fluid
   const {
     frontmatter: { title, date, path, url, duration, tags, season, episodeNumber, subtitle },
   } = data.allMdx.edges[0].node
@@ -27,15 +27,15 @@ const IndexPage = ({ data}) => {
       <div className={style.postContent}>
 
         <div className={style.home}>
-            {/* <Image
+            <Image
               fluid={homeImage}
               className={style.homeImage}
               alt="Another Talk Show Cover"
-            /> */}
-            <div className={style.homeImage}></div>
+            />
+            
 
             <div className={style.homeText}>
-              A talk show where a <span className={style.accent}>fairly ordinary host</span> interviews <span className={style.accent}>interesting people</span> who aren't famous.<br/>
+              A <span className={style.accent}>fairly ordinary host</span> interviews <span className={style.accent}>interesting people</span> who aren't famous.<br/>
               <Link to="/about" className={style.aboutLink}>Find out more...</Link>
             </div>
         </div>
@@ -91,7 +91,7 @@ export const data = graphql`
         }
       }
     }
-    homeImage: file(relativePath: { eq: "anothertalk-show.jpg" }) {
+    homeImage: file(relativePath: { eq: "another-talk-show-home.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 615, quality: 100){
           ...GatsbyImageSharpFluid
