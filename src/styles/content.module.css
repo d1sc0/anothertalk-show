@@ -32,6 +32,17 @@
   }
 }
 
+.titleList {
+  a {
+    color: var(--color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-accent);
+  }
+}
+
 .coverImage {
   border-radius: 10px;
   margin-bottom: 40px;
@@ -65,11 +76,11 @@
   font-weight: bold;
   margin: 10px 0;
   font-size: 1rem;
-  color: var(--color);
+  color: var(--color-accent);
 }
 
 .readMore:hover {
-  color: var(--color-accent);
+  color: var(--color);
 }
 
 .postContent {
@@ -233,15 +244,15 @@ audio {
 
   @media (--phone) {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
 .homeText {
   width: 38%;
   margin-bottom: 5px;
-  line-height: 3.4rem;
-  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-size: 2.9rem;
   font-weight: bold;
 
   a {

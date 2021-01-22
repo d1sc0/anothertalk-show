@@ -34,7 +34,7 @@ const Episode = ({
       <div className={style.postContent}>
         {excerpt ? (
           <>
-            <h1 className={style.title}>
+            <h1 className={style.titleList}>
               <Link to={path}>{title}</Link>
             </h1>
 

@@ -136,7 +136,7 @@
   z-index: 99;
 
   :global .dark-theme :local & {
-    background: var(--dark-accent);
+    background: var(--color);
   }
 
   li {
