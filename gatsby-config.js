@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Another Talk Show`,
-    description: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
+    description: `A podcast where a fairly ordinary host interviews interesting people who aren't famous!`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -138,9 +138,9 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: {
         title: `Another Talk Show`,
-        subtitle: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
-        description: `A podcast where a fairly ordinary host interviews talented people who aren't yet famous!`,
-        summary: `Discussions and interviews with interesting, talented people who aren't famous but maybe should be!`,
+        subtitle: `A podcast where a fairly ordinary host interviews interesting people who aren't famous!`,
+        description: `A podcast where a fairly ordinary host interviews interesting people who aren't famous!`,
+        summary: `Discussions and interviews with interesting, talented people who aren't famous. People are trying to make thew world a little brighter or better`,
         podcastType: `episodic`,
         siteUrl: `https://anothertalk.show`,
         imageUrl: `https://anothertalk.show/ats_cover.png`,
