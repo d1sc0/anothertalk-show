@@ -40,8 +40,6 @@ const IndexPage = ({ data}) => {
             </div>
         </div>
 
-                <Subscribe />
-
         <Player 
           title={title}
           date={date}
@@ -55,6 +53,7 @@ const IndexPage = ({ data}) => {
           secs={secs}
         />
 
+        <Subscribe />
 
       </div>
     </div>
