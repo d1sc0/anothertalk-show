@@ -8,7 +8,7 @@ const postCSSMixins = require('postcss-mixins')
 module.exports = {
   siteMetadata: {
     title: `Another Talk Show`,
-    description: `Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who who are trying to make the world a little bit brighter or better!`,
+    description: `Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who are trying to make the world a little bit brighter or better!`,
     author: `Stuart Mackenzie`,
     logo: {
       src: '',
@@ -140,7 +140,7 @@ module.exports = {
         title: `Another Talk Show`,
         subtitle: `A podcast where a fairly ordinary host interviews interesting people who aren't famous!`,
         description: `A podcast where a fairly ordinary host interviews interesting people who aren't famous!`,
-        summary: `Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who who are trying to make the world a little bit brighter or better!`,
+        summary: `Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who are trying to make the world a little bit brighter or better!`,
         podcastType: `episodic`,
         siteUrl: `https://anothertalk.show`,
         imageUrl: `https://anothertalk.show/ats_cover.png`,
