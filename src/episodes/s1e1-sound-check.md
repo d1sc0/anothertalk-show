@@ -1,7 +1,7 @@
 ---
 title: Sound Check
 subtitle: 'GUESTS: Nobody'
-status: draft
+status: published
 date: 2021-01-23
 publicationDate: 2021-01-23
 path: /episodes/s1e1-sound-check
