@@ -15,7 +15,7 @@ season: 1
 episodeNumber: 1
 episodeType: full
 url: https://storage.googleapis.com/anothertalk-show/s1e1-sound-check.mp3
-size: 608899
+size: 1462979
 duration: 46
 explicit: false
 ---
