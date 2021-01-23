@@ -1,6 +1,6 @@
 ---
 title: Sound Check
-subtitle: 'GUESTS: Nobody'
+subtitle: 'A quick sound check before the show kicks off properly - testing the tech and setting the scene!'
 status: published
 date: 2021-01-23
 publicationDate: 2021-01-23
