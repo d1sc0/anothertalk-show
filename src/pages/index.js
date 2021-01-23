@@ -20,8 +20,8 @@ const IndexPage = ({ data}) => {
   return (
   <Layout>
     <SEO
-      title="Home"
-      description="Another Talk Show - A podcast of interviews of talented people who aren't yet famous!"
+      title=""
+      description="Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous"
     />
     <div className={style.post}>
       <div className={style.postContent}>
