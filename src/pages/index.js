@@ -21,7 +21,7 @@ const IndexPage = ({ data}) => {
   <Layout>
     <SEO
       title=""
-      description="Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous"
+      description="Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who who are trying to make the world a little bit brighter or better!"
     />
     <div className={style.post}>
       <div className={style.postContent}>
