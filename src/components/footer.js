@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <footer>
       <p className={style.social}>
-      <a href="https://twitter.com/#" className={style.social}>
+      <a href="https://twitter.com/An0therTalkSh0w" className={style.social}>
         <FaTwitter size="2rem" />
       </a>
-      <a href="https://instagram.com/#" className={style.social}>
+      <a href="https://www.instagram.com/anothertalk.show/" className={style.social}>
         <FaInstagram size="2rem" />
       </a>
       <a href="https://apple.com/#" className={style.social}>
