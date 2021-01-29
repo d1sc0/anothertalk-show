@@ -14,8 +14,8 @@ const Subscribe = () => {
           <div className={style.subbuttons}>
             <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
             <a href='https://google.com'><FaPodcast size="1.3rem" />  Apple Podcasts</a>
-            <a href='https://google.com'><SiGooglepodcasts size="1.3rem" />  Google Podcasts</a>
-            <a href='https://google.com'><FaSpotify size="1.3rem" />  Spotify Podcasts</a>
+            <a href='https://podcasts.google.com/feed/aHR0cHM6Ly9hbm90aGVydGFsay5zaG93L3BvZGNhc3QtcnNzLWZlZWQueG1s'><SiGooglepodcasts size="1.3rem" />  Google Podcasts</a>
+            <a href='https://open.spotify.com/show/2Wf8butZI229NlRVPQHU6z'><FaSpotify size="1.3rem" />  Spotify Podcasts</a>
             </IconContext.Provider>
          </div> 
          <a href='/podcast-rss-feed.xml'>RSS Feed</a>

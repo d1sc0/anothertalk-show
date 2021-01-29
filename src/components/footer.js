@@ -22,10 +22,10 @@ const Footer = () => {
       <a href="https://apple.com/#" className={style.social}>
         <FaPodcast size="2rem" />
       </a>
-      <a href="https://google.com/#" className={style.social}>
+      <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbm90aGVydGFsay5zaG93L3BvZGNhc3QtcnNzLWZlZWQueG1s" className={style.social}>
         <SiGooglepodcasts size="2rem" />
       </a>
-      <a href="https://spotify.com/#" className={style.social}>
+      <a href="https://open.spotify.com/show/2Wf8butZI229NlRVPQHU6z" className={style.social}>
         <FaSpotify size="2rem" />
       </a>
       </p>

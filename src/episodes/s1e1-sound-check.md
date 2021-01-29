@@ -20,10 +20,7 @@ duration: 68
 explicit: false
 ---
 
-Lorem markdownum imperio hos [regia](http://est.org/aegeus) pectore: truncat
-solent litora _Iolen_ in egreditur! Orant opus solitam finxit, non edidit septem
-non se abstemius ut ad. Nubes quo thalami regnum dignare tempora. Armis igni
-deus supplex, nam gemma in gaudet, membrana colla flavescere.
+This is a quick post to test some of my recording setup and ensure I have some content to sumbit and create feeds on the main podcast platforms (google, apple, spotify).
 
 ## A quick audio test...to see if the world can hear me ok!
 

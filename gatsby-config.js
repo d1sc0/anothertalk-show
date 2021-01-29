@@ -143,7 +143,7 @@ module.exports = {
         summary: `Another Talk Show - A fairly ordinary host interviews interesting people who aren't famous. Interesting, talented people who are trying to make the world a little bit brighter or better!`,
         podcastType: `episodic`,
         siteUrl: `https://anothertalk.show`,
-        imageUrl: `https://anothertalk.show/ats_cover.png`,
+        imageUrl: `https://anothertalk.show/ats_cover_art.png`,
         feedUrl: `https://anothertalk.show/podcast-rss-feed.xml`,
         language: `en-gb`,
         copyright: `Copyright © 2020 Stuart Mackenzie`,
