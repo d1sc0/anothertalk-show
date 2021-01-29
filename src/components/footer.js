@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer>
       <p className={style.social}>
-      <a href="https://twitter.com/An0therTalkSh0w" className={style.social}>
+      <a href="https://twitter.com/ordinaryhost" className={style.social}>
         <FaTwitter size="2rem" />
       </a>
       <a href="https://www.instagram.com/anothertalk.show/" className={style.social}>
