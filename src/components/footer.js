@@ -19,7 +19,7 @@ const Footer = () => {
       <a href="https://www.instagram.com/anothertalk.show/" className={style.social}>
         <FaInstagram size="2rem" />
       </a>
-      <a href="https://apple.com/#" className={style.social}>
+      <a href="https://podcasts.apple.com/gb/podcast/another-talk-show/id1551385867" className={style.social}>
         <FaPodcast size="2rem" />
       </a>
       <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbm90aGVydGFsay5zaG93L3BvZGNhc3QtcnNzLWZlZWQueG1s" className={style.social}>
